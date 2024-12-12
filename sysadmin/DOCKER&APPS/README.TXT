@@ -12,6 +12,8 @@ INSTALARLO EN CERCA DEL HOST)
 DEJA TAMBIEN UN SCRIPT PARA UPDATE Y UPGRADE E INSTALAR ZEROTIER Y PORTAINER EN UBUNTU
 https://github.com/SantiagoWoznyn/scripts/tree/main/script%20x64
 
+MAS SCRIPTS EN:  https://github.com/SantiagoWoznyn/scripts/tree/main
+
 LA PRIMER DOCKER APP ES PORTAINER PARA ADMINISTRAR LOS CONTENEDORES
 TAMBIEN EN PORTAINER PODEMOS USAR ESTE JSON PARA TENER UNA LISTA DE DOCKER https://raw.githubusercontent.com/Lissy93/portainer-templates/main/templates.json
 https://github.com/Lissy93/portainer-templates
