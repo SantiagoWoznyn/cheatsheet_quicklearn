@@ -1,3 +1,10 @@
-TREMENDA PAGINA
+SERVICIOS DE AI EN LA WEB
 
-https://aifindy.com
+https://aifindy.com    ---RECOPILA NOMBRES DE AI EN LA WEB
+
+WEB AI PARA PROGRAMAR
+    https://www.eraser.io   para diagramas----para documentacion
+    https://excalidraw.com   para diagramas----para documentacion
+
+    https://v0.dev   ---programa interfaces graficas, es decir hace frontend
+
