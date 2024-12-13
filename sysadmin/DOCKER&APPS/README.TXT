@@ -32,3 +32,7 @@ OBSIDIAN
 
 BASE DE DATOS:
 MYSQL DE MICROSOFT
+
+SERVER :
+NGINX
+COOLIFY    https://coolify.io/docs/
