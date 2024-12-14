@@ -1,0 +1,37 @@
+https://tek2cloud.com/best-docker-containers-for-devops-in-2024/#monitoring-stack
+
+aca se va a probar todos los docker que voy a mencionar: 
+
+CI/CD:
+
+GitLab
+Jenkins
+Gitea
+ArgoCD
+
+Container registries :
+
+GitLab
+Harbor
+
+Secrets management :
+
+Hashicorp Vault
+CyberArk Conjur
+OpenBAO
+
+Code Quality :
+
+Sonarqube
+
+Monitoring stack :
+
+Telegraf
+InfluxDB
+Prometheus
+Grafana
+
+Ingress :
+
+Nginx Proxy Manager
+Traefik
