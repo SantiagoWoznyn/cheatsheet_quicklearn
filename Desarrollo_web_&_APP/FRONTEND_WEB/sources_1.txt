@@ -7,3 +7,6 @@ source:
 
   template de figma--
   https://www.youtube.com/watch?v=ItWh7mj01M8&t=347s
+
+more resource: 
+    https://www.codingnepalweb.com/create-responsive-coffee-website-html-css/
