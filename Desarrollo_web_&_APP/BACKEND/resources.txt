@@ -1,2 +1,9 @@
 AI TOOL PARA SQL BASE DE DATOS RELACIONAL
 	https://dbdiagram.io/d
+
+HERRAMIENTAS WEB
+	https://regex101.com
+
+	https://mailtrap.io
+
+	https://swagger.io/tools/swagger-ui/
