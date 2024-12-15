@@ -7,3 +7,11 @@ HERRAMIENTAS WEB
 	https://mailtrap.io
 
 	https://swagger.io/tools/swagger-ui/
+
+
+web services base de datos
+	https://planetscale.com
+
+	https://www.mongodb.com/cloud/atlas/register
+
+	https://neon.tech
