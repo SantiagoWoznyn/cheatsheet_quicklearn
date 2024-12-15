@@ -1,0 +1,43 @@
+Aquí te dejo una lista de conceptos clave para un analista de datos que pueden ayudarte a comprender mejor el campo y mejorar tus habilidades:
+
+1. Análisis Exploratorio de Datos (EDA)
+Descripción: Proceso inicial para explorar y entender los datos, identificar patrones, detectar datos atípicos y relaciones antes de proceder con el análisis más profundo o la modelización.
+Herramientas: Python (con pandas, seaborn, matplotlib), R, herramientas de BI como Power BI o Tableau.
+2. Limpieza de Datos
+Descripción: Proceso de preparación y transformación de datos crudos para que puedan ser utilizados en el análisis. Incluye la eliminación de datos faltantes, normalización, detección de outliers, y corrección de inconsistencias.
+Técnicas: dropna(), fillna(), encoding categorical, scaling numerical.
+3. Regresión
+Descripción: Técnica estadística para modelar la relación entre una variable dependiente y una o más variables independientes. Es comúnmente utilizada para pronosticar valores.
+Modelos: Regresión lineal, regresión logística, regresión polinómica.
+4. Clasificación
+Descripción: Técnica de aprendizaje automático que asocia datos de entrada a uno de varios posibles grupos o clases. Se utiliza para predecir una clase o categoría.
+Algoritmos: Random Forest, SVM, Naive Bayes, K-Nearest Neighbors, Logistic Regression.
+5. Agrupamiento (Clustering)
+Descripción: Técnica que divide los datos en grupos homogéneos o clusters. Es utilizada para identificar patrones y estructura subyacente en los datos no etiquetados.
+Algoritmos: K-means, Hierarchical Clustering, DBSCAN.
+6. Análisis de Series Temporales
+Descripción: Análisis y modelado de datos ordenados temporalmente para predecir el comportamiento futuro o identificar patrones y tendencias a lo largo del tiempo.
+Modelos: ARIMA, Prophet, SARIMA.
+7. Minería de Texto (Text Mining)
+Descripción: Proceso para extraer información significativa de textos sin estructura, como correos electrónicos, documentos, redes sociales.
+Técnicas: Tokenización, Lematización, Análisis de Sentimientos, Nube de Palabras.
+8. SQL (Structured Query Language)
+Descripción: Lenguaje utilizado para gestionar bases de datos relacionales, insertar, actualizar, eliminar datos, y hacer consultas.
+Conceptos clave: JOIN, GROUP BY, WHERE, ORDER BY, LIMIT.
+9. Visualización de Datos
+Descripción: Representación gráfica de datos a través de gráficos y tablas para facilitar la comprensión y la toma de decisiones.
+Herramientas: matplotlib, seaborn, Power BI, Tableau, Excel.
+10. Python y R
+Descripción: Ambos son lenguajes de programación ampliamente utilizados para análisis de datos, machine learning y estadística. Python es más versátil y fácil de aprender, mientras que R es especializado en análisis estadístico y visualización de datos.
+11. Herramientas de BI (Business Intelligence)
+Descripción: Software utilizado para analizar datos empresariales y convertirlos en información útil para la toma de decisiones. Incluye herramientas como Power BI, Tableau, Qlik, y Google Data Studio.
+12. Modelos Predictivos y Machine Learning
+Descripción: Técnicas que utilizan algoritmos para predecir eventos futuros o identificar patrones en los datos. Incluye aprendizaje supervisado y no supervisado.
+Algoritmos: Redes Neuronales, Árboles de Decisión, SVM, Regresión Logística.
+13. Análisis Exploratorio de Datos (EDA)
+Descripción: Un enfoque que implica examinar y comprender los datos a través de una variedad de técnicas estadísticas y gráficas antes de aplicar modelos formales.
+Objetivo: Identificar patrones, detectar errores, y obtener una comprensión inicial de los datos.
+14. A/B Testing (Pruebas A/B)
+Descripción: Técnica para comparar dos versiones de algo (como una página web o un anuncio) para determinar cuál funciona mejor. Es útil para tomar decisiones basadas en datos sobre cambios futuros.
+15. Análisis de Sentimientos
+Descripción: Técnica utilizada para identificar y clasificar el sentimiento expresado en un texto (positivo, negativo o neutral). Es comúnmente utilizada en redes sociales, análisis de opiniones y estudios de mercado.
