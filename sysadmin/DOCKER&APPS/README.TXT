@@ -21,21 +21,21 @@ SE ENCUENTRA EN : https://github.com/Lissy93/portainer-templates
 
 DOCKERAPP LIST:
 
-ADMIN AND DASHBOARD :
-CASA OS
+======ADMIN AND DASHBOARD======
+CASA OS 
 PORTAINER
 HOME ASSISTANT
 
-AUTOMATIZACION:
+======AUTOMATIZACION======
 KESTRA
 
-DOCUMENTACION E INFORMACION:
+======DOCUMENTACION E INFORMACION======
 GITEA
 OBSIDIAN
 
-BASE DE DATOS:
-MYSQL DE MICROSOFT
+======BASE DE DATOS======
+MYSQL DE MICROSOFT (docker-compose) : https://github.com/SantiagoWoznyn/scripts/blob/main/script%20x64/dockersh/mysql_install_1.sh 
 
-SERVER :
+======SERVER======
 NGINX
 COOLIFY    https://coolify.io/docs/
