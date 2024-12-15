@@ -1,0 +1,3 @@
+X-PIPE
+  usar x pipe para entrar con ssh a cualquier servidor, sirve muchisimo porque ordena todo
+  y es un software libre
