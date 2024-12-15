@@ -1,0 +1,110 @@
+¡Sí, es posible hacer lo que planteas! La idea es tener un sistema totalmente offline que incluya Docker y todas sus dependencias, y que además permita almacenar imágenes Docker para distribuirlas desde un servidor local. Aquí te detallo cómo hacerlo:
+
+1. Preparar un paquete offline para Docker
+Docker y sus dependencias pueden ser descargados en un entorno con acceso a Internet y luego transferidos a un servidor sin conexión.
+
+1.1. Descargar los paquetes necesarios de Docker en otra máquina
+Instala el comando apt en modo "solo descarga":
+
+bash
+Copiar código
+sudo apt-get install --download-only docker-ce docker-ce-cli containerd.io
+Esto descargará los paquetes .deb de Docker y sus dependencias.
+
+Copia todos los archivos .deb descargados a un directorio:
+
+bash
+Copiar código
+mkdir docker-offline
+cp /var/cache/apt/archives/*.deb docker-offline/
+Transfiere el directorio docker-offline al servidor Linux (por ejemplo, con SCP o USB).
+
+1.2. Instalar Docker offline en el servidor
+En el servidor Linux, instala Docker usando dpkg:
+
+bash
+Copiar código
+sudo dpkg -i docker-offline/*.deb
+Soluciona dependencias (si es necesario):
+
+bash
+Copiar código
+sudo apt-get install -f
+Esto instalará Docker sin necesidad de acceso a Internet.
+
+2. Crear un registro privado para almacenar imágenes
+Después de instalar Docker, configura un registro privado para almacenar y distribuir imágenes.
+
+Obtener la imagen del registro en la máquina con Internet:
+
+bash
+Copiar código
+docker pull registry:2
+docker save registry:2 > registry.tar
+Transferir la imagen al servidor offline: Copia el archivo registry.tar al servidor.
+
+Cargar la imagen en el servidor offline:
+
+bash
+Copiar código
+docker load < registry.tar
+Ejecutar el registro:
+
+bash
+Copiar código
+docker run -d -p 5000:5000 --name registry --restart=always registry:2
+Esto crea un registro local que puedes usar para guardar imágenes Docker.
+
+3. Pre-descargar imágenes Docker necesarias
+Descargar imágenes en la máquina con Internet: Ejemplo:
+
+bash
+Copiar código
+docker pull ubuntu:20.04
+docker save ubuntu:20.04 > ubuntu.tar
+Transferir las imágenes al servidor offline: Usa un medio físico o una conexión segura para copiar los archivos .tar.
+
+Cargar las imágenes en el servidor offline:
+
+bash
+Copiar código
+docker load < ubuntu.tar
+Subir las imágenes al registro privado:
+
+bash
+Copiar código
+docker tag ubuntu:20.04 localhost:5000/ubuntu:20.04
+docker push localhost:5000/ubuntu:20.04
+4. Usar imágenes desde el registro local
+En cualquier máquina de la red local:
+
+Configura Docker para usar el registro sin HTTPS (si no tienes un certificado):
+
+json
+Copiar código
+{
+  "insecure-registries": ["192.168.1.100:5000"]
+}
+Luego, reinicia Docker:
+
+bash
+Copiar código
+sudo systemctl restart docker
+Descarga la imagen desde el registro:
+
+bash
+Copiar código
+docker pull 192.168.1.100:5000/ubuntu:20.04
+Resumen
+Puedes instalar Docker offline usando los paquetes .deb.
+Configuras un registro privado local para almacenar y distribuir imágenes.
+Pre-descargas imágenes en otra máquina, las transfieres y las subes al registro.
+De esta manera, tu servidor Linux Ubuntu tendrá Docker, las imágenes necesarias, y funcionará completamente sin conexión a Internet.
+
+¿Necesitas un script o más detalles para automatizar alguno de estos pasos? 😊
+
+
+
+
+
+
