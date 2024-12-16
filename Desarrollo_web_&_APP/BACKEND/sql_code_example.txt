@@ -1,0 +1,13 @@
+-- Crear la base de datos con el esquema 'Usuarios'
+CREATE SCHEMA Usuarios DEFAULT CHARACTER SET utf8mb4;
+
+-- Seleccionar el esquema
+USE Usuarios;
+
+-- Crear la tabla 'usuarios' dentro del esquema
+CREATE TABLE usuarios (
+    id INT NOT NULL AUTO_INCREMENT,  -- Columna ID que se incrementa automáticamente
+    nombre VARCHAR(50) NOT NULL,    -- Columna para el nombre de usuario
+    contraseña VARCHAR(100) NOT NULL, -- Columna para la contraseña
+    PRIMARY KEY (id)                -- Clave primaria
+);
