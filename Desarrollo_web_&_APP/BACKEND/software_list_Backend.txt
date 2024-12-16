@@ -1,0 +1,9 @@
+MYSQL WORKBENCH
+  SE usa para crear una base de datos, nos conectamos a un servidor o docker
+  ponemos nuevo esquema y deplegamos un script :  
+  https://github.com/SantiagoWoznyn/cheatsheet_quicklearn/blob/main/Desarrollo_web_%26_APP/BACKEND/sql_code_example.txt
+ahi insteramos datos
+
+DATA AZURE STUDIO
+  se puede usar para conectar a una base de datos sql server de microsoft
+ 
