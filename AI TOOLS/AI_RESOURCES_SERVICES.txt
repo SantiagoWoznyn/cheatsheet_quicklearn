@@ -8,3 +8,5 @@ WEB AI PARA PROGRAMAR
 
     https://v0.dev   ---programa interfaces graficas, es decir hace frontend
 
+
+https://aithor.com/es-419  para documentacion ,etc
