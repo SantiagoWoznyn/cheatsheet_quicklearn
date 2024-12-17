@@ -1,5 +1,8 @@
 TAMBIEN ENTRA EN EL DISEÑO FRONTEND EL USO DE FIGMA
 
+
+https://svgl.app  pagina web para sacar logos ,etc
+
 source:
   fazt
   https://www.youtube.com/watch?v=3_dwKqCsbis&t=749s
