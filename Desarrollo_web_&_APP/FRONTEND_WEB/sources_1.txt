@@ -1,6 +1,7 @@
 TAMBIEN ENTRA EN EL DISEÑO FRONTEND EL USO DE FIGMA
 
 
+
 https://svgl.app  pagina web para sacar logos ,etc
 
 https://www.designspells.com
@@ -15,6 +16,21 @@ https://www.landing.love
 
 https://potlabicons.com
 
+https://www.tailwindgen.com
+
+https://framermotionexamples.com/examples?s=free&page=5
+
+https://motion.dev/docs
+
+https://learning.atheros.ai/#classes
+
+https://animate.style
+
+https://www.minimamente.com/project/magic/
+
+https://animista.net
+
+https://jonsuh.com/hamburgers/
 --------------------------------------------------------------------------
 
 https://htmlcheatsheet.com 
