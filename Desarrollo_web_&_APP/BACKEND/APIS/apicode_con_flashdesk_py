@@ -1,0 +1,37 @@
+from flask import Flask, request, jsonify
+import mysql.connector
+
+app = Flask(__name__)
+
+# Conexión a la base de datos
+db = mysql.connector.connect(
+    host="localhost",
+    user="testsan",         # Usuario de la base de datos
+    password="tu_password", # Contraseña de la base de datos
+    database="Usuarios"     # Nombre del esquema
+)
+
+# Endpoint para registrar usuarios
+@app.route('/registro', methods=['POST'])
+def registrar_usuario():
+    # Obtener los datos del formulario
+    nombre = request.form.get('nombre')
+    contraseña = request.form.get('contraseña')
+
+    if not nombre or not contraseña:
+        return jsonify({"mensaje": "Faltan datos"}), 400
+
+    try:
+        # Insertar los datos en la base de datos
+        cursor = db.cursor()
+        query = "INSERT INTO usuarios (nombre, contraseña) VALUES (%s, %s)"
+        cursor.execute(query, (nombre, contraseña))
+        db.commit()  # Guardar los cambios
+
+        return jsonify({"mensaje": "Usuario registrado exitosamente"}), 201
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+# Ejecutar la API
+if __name__ == '__main__':
+    app.run(debug=True, port=8080)  # Cambia 8080 por el puerto que desees
