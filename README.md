@@ -3,7 +3,7 @@ OBVIAMENTE TODO EL CONTENIDO HA DE SER SUPERFICIAL, YA QUE EL CONTENIDO ANIDADO 
 
 * A FUTURO VOY A DIVIDIR MAS LOS TEMAS , es decir por ejemplo hacer un datacheatsheet_quicklearn de sysadmin y este podria contener un poco mas de informacion,etc *
 
-TEMAS A TRATAR: VOY A COMPLETAR LA LISTA DESPUES
+TEMAS A TRATAR: 
   SYSADMIN:
   
   DESARROLLO WEB Y APPS : FRONTEND Y BACKEND PARA WEBS Y APPS
@@ -12,4 +12,3 @@ TEMAS A TRATAR: VOY A COMPLETAR LA LISTA DESPUES
   
   
 
-* A FUTURO VOY A DIVIDIR MAS LOS TEMAS , es decir por ejemplo hacer un datacheatsheet_quicklearn de sysadmin y este podria contener un poco mas de informacion,etc *
