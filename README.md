@@ -5,6 +5,14 @@ OBVIAMENTE TODO EL CONTENIDO HA DE SER SUPERFICIAL, YA QUE EL CONTENIDO ANIDADO 
 
 TEMAS A TRATAR: 
   SYSADMIN:
+    proxmox
+    dev ops 
+    cyberseguridad
+    networks (redes)
+    cloud web services
+    dockers
+    distros de linux
+    lista de software para un sysadmin
   
   DESARROLLO WEB Y APPS : FRONTEND Y BACKEND PARA WEBS Y APPS
   
