@@ -39,3 +39,5 @@ MYSQL DE MICROSOFT (docker-compose) : https://github.com/SantiagoWoznyn/scripts/
 ======SERVER======
 NGINX
 COOLIFY    https://coolify.io/docs/
+CODE SERVER  :  ES COMO VISUAL STUDIO CODE :   https://hub.docker.com/r/linuxserver/code-server  : PERO SERVER
+  podes codear desde fuera de la red con vpn o en la red
