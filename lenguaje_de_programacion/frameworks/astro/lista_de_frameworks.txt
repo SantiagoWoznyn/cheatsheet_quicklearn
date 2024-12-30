@@ -1,0 +1,87 @@
+---Frontend---
+
+React
+Biblioteca de JavaScript para construir interfaces de usuario dinámicas.
+
+Vue.js
+Framework progresivo para interfaces de usuario, fácil de aprender.
+
+Angular
+Framework completo para crear aplicaciones web robustas, mantenido por Google.
+
+Svelte
+Framework que compila código optimizado para aplicaciones rápidas.
+
+---Backend---
+
+Node.js + Express.js
+Plataforma de JavaScript para crear servidores rápidos y APIs REST.
+
+Django
+Framework robusto en Python con muchas funcionalidades incluidas.
+
+Flask
+Framework minimalista en Python, ideal para proyectos pequeños.
+
+Spring Boot
+Framework Java para crear aplicaciones empresariales.
+
+Ruby on Rails
+Framework en Ruby enfocado en la simplicidad y productividad.
+
+
+---Full-Stack---
+
+Next.js
+Framework de React para aplicaciones web con SSR y API integradas.
+
+Nuxt.js
+Versión de Vue.js con funcionalidades full-stack.
+
+Meteor
+Framework JavaScript para aplicaciones en tiempo real.
+
+Blitz.js
+Extensión de Next.js para simplificar el desarrollo full-stack.
+
+
+---Móvil---
+
+React Native
+Para crear aplicaciones móviles nativas con JavaScript.
+
+Flutter
+Framework de Google para aplicaciones móviles rápidas y bonitas (Dart).
+
+Ionic
+Para aplicaciones híbridas usando tecnologías web (HTML, CSS, JavaScript).
+
+
+---CSS y UI---
+
+Bootstrap
+Framework CSS para diseño web responsivo.
+
+Tailwind CSS
+Framework utilitario que permite personalización avanzada.
+
+Foundation
+Alternativa a Bootstrap, centrada en accesibilidad.
+
+---Bases de Datos---
+
+TypeORM
+ORM para Node.js que facilita la interacción con bases de datos.
+
+Sequelize
+ORM para Node.js compatible con bases de datos SQL.
+
+Mongoose
+ODM para trabajar con MongoDB en Node.js.
+
+---Otros---
+Electron
+Framework para crear aplicaciones de escritorio con tecnologías web.
+
+TensorFlow.js
+Framework para Machine Learning en JavaScript.
