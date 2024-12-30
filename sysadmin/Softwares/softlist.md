@@ -9,10 +9,11 @@ ZEROTIER
 RUSTDESK O GUACAMOLE
   Para accesso remoto de escritorio
 
-| Columna 1 | Columna 2 | Columna 3 |
-|-----------|-----------|-----------|
+| Columna 1 | Columna 2 | Columna 3 || Columna 1 | Columna 2 | Columna 3 |
+|-----------|-----------|-----------|------------|-----------|-----------|
 | Dato 1    | Dato 2    | Dato 3    |
 | Otro 1    | Otro 2    | Otro 3    |
+
 					
 
 
