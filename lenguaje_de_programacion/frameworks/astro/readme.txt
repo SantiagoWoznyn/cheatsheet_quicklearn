@@ -43,3 +43,28 @@ sudo ufw allow 4321/tcp
 
 --------------------------------------------------------------------------------
 
+dato 2
+
+Esto puede deberse a que npm create astro@latest ha cambiado su flujo de configuración por defecto en versiones más recientes. Antes, el asistente interactivo preguntaba si deseabas usar TypeScript. Ahora, muchas herramientas como Astro generan automáticamente una configuración base en JavaScript y permiten migrar a TypeScript después de crear el proyecto.
+
+Solución:
+Usar el flag --typescript: Puedes forzar la creación de un proyecto con TypeScript utilizando el siguiente comando:
+
+bash
+Copiar código
+npm create astro@latest -- --typescript
+Convertir un proyecto existente a TypeScript: Si ya creaste el proyecto y no incluye TypeScript, Astro tiene un comando para migrar:
+
+bash
+Copiar código
+npx astro add typescript
+Este comando instalará las dependencias necesarias, como typescript y @types/node, y generará archivos base de configuración como tsconfig.json.
+
+Verifica la versión de Astro CLI: Si el asistente de instalación no te pregunta nada, podría ser un problema con la versión de npm o create-astro. Asegúrate de usar las versiones más recientes:
+
+bash
+Copiar código
+npm install -g create-astro
+
+--------------------------
+
