@@ -1,0 +1,1 @@
+softlist_en_navegador
