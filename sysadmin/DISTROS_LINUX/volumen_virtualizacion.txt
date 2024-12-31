@@ -1,0 +1,14 @@
+Crear un QCOW2:        
+qemu-img create -f qcow2 /ruta/a/mi_imagen.qcow2 10G
+
+Cargar el módulo NBD:         
+sudo modprobe nbd
+
+Conectar la imagen QCOW2:
+sudo qemu-nbd -c /dev/nbd0 /ruta/a/mi_imagen.qcow2
+
+Formatear la partición (si no tiene sistema de archivos): 
+sudo mkfs.ext4 /dev/nbd0p1
+
+Montar la partición (si existe): 
+sudo mount /dev/nbd0p1 /mnt
