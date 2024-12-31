@@ -17,6 +17,8 @@
 |                              | Raspberry Pi Imager            |                      |                |               |                               |
 |                              | Balena Etcher                  |                      |                |               |                               |
 |                              | Ventoy                         |                      |                |               |                               |
+|                              | AFFINE                         |                      |                |               |                               |
+|                              | NOTION                         |                      |                |               |                               |
 | **PROGRAMACIÓN**             |                                |                      |                |               |                               |
 |                              | Visual Studio Code             |                      |                |               |                               |
 |                              | Azure Data Studio              |                      |                |               |                               |
