@@ -1,0 +1,60 @@
+1. Guardar las imágenes Docker como archivos tar
+Puedes descargar y almacenar imágenes Docker como archivos .tar en una carpeta compartida. Luego, puedes usar estos archivos para cargar las imágenes en otros sistemas sin necesidad de conexión a Docker Hub o un registro privado.
+
+Paso 1: Descargar la imagen Docker
+Para descargar una imagen de Docker desde un registro (por ejemplo, Docker Hub), usa el siguiente comando:
+
+docker pull nombre_imagen:tag
+
+Paso 2: Guardar la imagen como archivo tar
+Una vez que la imagen esté descargada, puedes guardarla como un archivo .tar:
+
+docker save -o /ruta/a/tu/carpeta/nombre_imagen.tar nombre_imagen:tag
+
+Esto guardará la imagen como un archivo tar en la carpeta especificada.
+
+Paso 3: Transferir el archivo .tar
+Puedes mover este archivo .tar a una carpeta compartida en tu red o a un dispositivo de almacenamiento externo (como un disco duro USB o una carpeta en la red local).
+
+2. Cargar la imagen Docker desde el archivo tar
+Una vez que tengas el archivo .tar en la máquina donde deseas usarlo, puedes cargar la imagen en Docker con el siguiente comando:
+
+docker load -i /ruta/a/tu/carpeta/nombre_imagen.tar
+
+Esto cargará la imagen en Docker, permitiéndote usarla como si la hubieras descargado directamente desde un registro.
+
+3. Ejecutar contenedores sin conexión (offline)
+Después de cargar la imagen, puedes ejecutar el contenedor sin necesidad de estar conectado a un registro de Docker. Aquí te muestro cómo hacerlo.
+
+Usando docker run:
+docker run -d --name nombre_contenedor nombre_imagen:tag
+
+Usando docker-compose:
+Si prefieres usar Docker Compose, puedes crear un archivo docker-compose.yml para definir los servicios, incluso con la imagen cargada desde el archivo .tar.
+
+Ejemplo de un archivo docker-compose.yml para un contenedor Docker:
+
+version: '3'
+services:
+  mi_servicio:
+    image: nombre_imagen:tag
+    ports:
+      - "8080:80"
+
+      
+Para ejecutar el contenedor con Docker Compose, simplemente ejecuta:
+
+docker-compose up -d
+
+4. Configurar una carpeta compartida
+Si estás trabajando con una red local o un entorno donde varios servidores pueden acceder a una carpeta compartida, asegúrate de que la carpeta donde guardas los archivos .tar esté accesible para otros sistemas. Esto se puede hacer de varias maneras:
+
+Compartir la carpeta a través de NFS o Samba para que otras máquinas accedan al archivo.
+Usar un servidor FTP/SFTP para transferir archivos si estás trabajando con máquinas distribuidas.
+
+Resumen:
+Descargar la imagen y guardarla como un archivo .tar con docker save.
+Mover el archivo .tar a una carpeta compartida en la red.
+Cargar la imagen en otro sistema con docker load.
+Ejecutar el contenedor usando docker run o docker-compose desde la imagen cargada.
+Esto te permitirá trabajar con contenedores Docker de manera offline sin necesidad de un registro privado o una interfaz web interactiva.
