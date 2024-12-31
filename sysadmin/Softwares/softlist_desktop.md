@@ -6,19 +6,19 @@
 | **OFIMÁTICA Y ADMIN SOFT**   |                                |                      |                |               |                               |
 |                              | Microsoft Office Suite         | Office Libre         |                |               | Tiene Excel, Word, etc.       |
 |                              | Sublime Text                   | Sublime Text         |                |               |                               |
-|                              | Todoist                        |                      |                |               |                               |
+|                              | Todoist                        |                      |                |               | TAREAS (notion o affine       |
 |                              | KeeWeb                         |                      |                |               |                               |
-|                              | KeepassXC (funciona en Win11)  |                      |                |               |                               |
+|                              | KeepassXC (funciona en Win11)  |                      |                |               | gestor password               |
 |                              | VirtualBox                     |                      |                |               |                               |
-|                              | x Pipe                         |                      |                |               |                               |
+|                              | x Pipe                         |                      |                |               | ACCESSO SSH                   |
 |                              | ZeroTier                       |                      |                |               |                               |
 |                              | Docker                         |                      |                |               |                               |
 |                              | RustDesk                       |                      |                |               |                               |
-|                              | Raspberry Pi Imager            |                      |                |               |                               |
-|                              | Balena Etcher                  |                      |                |               |                               |
-|                              | Ventoy                         |                      |                |               |                               |
-|                              | AFFINE                         |                      |                |               |                               |
-|                              | NOTION                         |                      |                |               |                               |
+|                              | Raspberry Pi Imager            |                      |                |               | //QUEMADOR ISO RPI4           |
+|                              | Balena Etcher                  |                      |                |               | //QUEMADOR USB                |
+|                              | Ventoy                         |                      |                |               | //QUEMADOR USB                |
+|                              | AFFINE                         |                      |                |               | // ORGANIZADOR                |
+|                              | NOTION                         |                      |                |               | // ORGANIZADOR                |
 | **PROGRAMACIÓN**             |                                |                      |                |               |                               |
 |                              | Visual Studio Code             |                      |                |               |                               |
 |                              | Azure Data Studio              |                      |                |               |                               |
