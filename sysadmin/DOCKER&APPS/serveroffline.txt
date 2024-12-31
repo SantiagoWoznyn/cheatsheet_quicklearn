@@ -6,15 +6,15 @@ Docker y sus dependencias pueden ser descargados en un entorno con acceso a Inte
 1.1. Descargar los paquetes necesarios de Docker en otra máquina
 Instala el comando apt en modo "solo descarga":
 
-bash
-Copiar código
+
 sudo apt-get install --download-only docker-ce docker-ce-cli containerd.io
+
 Esto descargará los paquetes .deb de Docker y sus dependencias.
+
 
 Copia todos los archivos .deb descargados a un directorio:
 
-bash
-Copiar código
+
 mkdir docker-offline
 cp /var/cache/apt/archives/*.deb docker-offline/
 Transfiere el directorio docker-offline al servidor Linux (por ejemplo, con SCP o USB).
@@ -22,13 +22,12 @@ Transfiere el directorio docker-offline al servidor Linux (por ejemplo, con SCP 
 1.2. Instalar Docker offline en el servidor
 En el servidor Linux, instala Docker usando dpkg:
 
-bash
-Copiar código
+
 sudo dpkg -i docker-offline/*.deb
+
 Soluciona dependencias (si es necesario):
 
-bash
-Copiar código
+
 sudo apt-get install -f
 Esto instalará Docker sin necesidad de acceso a Internet.
 
@@ -37,29 +36,25 @@ Después de instalar Docker, configura un registro privado para almacenar y dist
 
 Obtener la imagen del registro en la máquina con Internet:
 
-bash
-Copiar código
+
 docker pull registry:2
 docker save registry:2 > registry.tar
 Transferir la imagen al servidor offline: Copia el archivo registry.tar al servidor.
 
 Cargar la imagen en el servidor offline:
 
-bash
-Copiar código
+
 docker load < registry.tar
 Ejecutar el registro:
 
-bash
-Copiar código
+
 docker run -d -p 5000:5000 --name registry --restart=always registry:2
 Esto crea un registro local que puedes usar para guardar imágenes Docker.
 
 3. Pre-descargar imágenes Docker necesarias
 Descargar imágenes en la máquina con Internet: Ejemplo:
 
-bash
-Copiar código
+
 docker pull ubuntu:20.04
 docker save ubuntu:20.04 > ubuntu.tar
 Transferir las imágenes al servidor offline: Usa un medio físico o una conexión segura para copiar los archivos .tar.
