@@ -26,7 +26,9 @@
 |                              | Android Studio                 |                      |                |               |                               |
 |                              | Apache Netbeans                |                      |                |               |                               |
 |                              | MySQL Workbench                |                      |                |               |                               |
-|                              | SQLite Studio                  |                      |                |               |                               |
+|                              | SQLite Studio                  |                      |                |               |                               |				
+
+
 | **DESCARGAS**                |                                |                      |                |               |                               |
 |                              | JDownloader2                   |                      |                |               |                               |
 |                              | uTorrent                       |                      |                |               |                               |
