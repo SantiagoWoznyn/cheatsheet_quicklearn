@@ -18,7 +18,8 @@
 |                              | Balena Etcher                  |                      |                |               | //QUEMADOR USB                |
 |                              | Ventoy                         |                      |                |               | //QUEMADOR USB                |
 |                              | AFFINE                         |                      |                |               | // ORGANIZADOR                |
-|                              | NOTION                         |                      |                |               | // ORGANIZADOR                |
+|                              | NOTION                         |                      |                |               | // ORGANIZADOR
+|                              | VERACRYPT                         |                      |                |               | // ORGANIZADOR             |
 | **PROGRAMACIÓN**             |                                |                      |                |               |                               |
 |                              | Visual Studio Code             |                      |                |               |                               |
 |                              | Azure Data Studio              |                      |                |               |                               |
