@@ -27,8 +27,6 @@
 |                              | Apache Netbeans                |                      |                |               |                               |
 |                              | MySQL Workbench                |                      |                |               |                               |
 |                              | SQLite Studio                  |                      |                |               |                               |				
-
-
 | **DESCARGAS**                |                                |                      |                |               |                               |
 |                              | JDownloader2                   |                      |                |               |                               |
 |                              | uTorrent                       |                      |                |               |                               |
