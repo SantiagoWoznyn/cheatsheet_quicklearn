@@ -18,8 +18,9 @@
 |                              | Balena Etcher                  |                      |                |               | //QUEMADOR USB                |
 |                              | Ventoy                         |                      |                |               | //QUEMADOR USB                |
 |                              | AFFINE                         |                      |                |               | // ORGANIZADOR                |
-|                              | NOTION                         |                      |                |               | // ORGANIZADOR
-|                              | VERACRYPT                         |                      |                |               | // ORGANIZADOR             |
+|                              | NOTION                         |                      |                |               | // ORGANIZADOR                |
+|                              | VERACRYPT                      |                      |                |               | // ENCRIPTADOR                |
+|                              | CHATGPTAPP MICROSOFT STORE     |                      |                |               | //                            |
 | **PROGRAMACIÓN**             |                                |                      |                |               |                               |
 |                              | Visual Studio Code             |                      |                |               |                               |
 |                              | Azure Data Studio              |                      |                |               |                               |
