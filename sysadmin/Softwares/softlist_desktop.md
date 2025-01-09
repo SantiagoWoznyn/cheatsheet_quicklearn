@@ -18,7 +18,8 @@
 |                              | Balena Etcher                  |                      |                |               | //QUEMADOR USB                |
 |                              | Ventoy                         |                      |                |               | //QUEMADOR USB                |
 |                              | AFFINE                         |                      |                |               | // ORGANIZADOR                |
-|                              | NOTION                         |                      |                |               | // ORGANIZADOR                |
+|                              | NOTION                         | lotion               |                |               | // ORGANIZADOR                |
+|                              |                                |   notion-enhancer    |                |               |                               |
 |                              | VERACRYPT                      |                      |                |               | // ENCRIPTADOR                |
 |                              | CHATGPTAPP MICROSOFT STORE     |                      |                |               | //                            |
 | **PROGRAMACIÓN**             |                                |                      |                |               |                               |
