@@ -2,6 +2,12 @@ lista de cosas a hacer en un principio en visual studio desktop:
 INSTALAR NPM
 NODE JS desde un exe
 
+extensiones :
+  python
+  dracula theme
+  astro
+  live server
+
 quizas un script para instalar todo esto mediante terminal :
 
 ----------------------------------------------------------------------
