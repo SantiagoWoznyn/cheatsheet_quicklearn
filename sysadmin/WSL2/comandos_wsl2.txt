@@ -1,0 +1,6 @@
+lista de distribuciones que estan andando
+  wsl -l -v
+
+apagar distribucion
+    wsl shutdown -d (distribucion)
+    wsl shutdown -d ubuntu 
