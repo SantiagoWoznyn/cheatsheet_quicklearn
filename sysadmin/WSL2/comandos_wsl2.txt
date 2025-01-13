@@ -2,5 +2,5 @@ lista de distribuciones que estan andando
   wsl -l -v
 
 apagar distribucion
-    wsl shutdown -d (distribucion)
-    wsl shutdown -d ubuntu 
+    wsl --terminate (distribucion)
+    wsl --terminate kali-linux
