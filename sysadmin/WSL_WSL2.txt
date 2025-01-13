@@ -1,0 +1,35 @@
+instalar wsl:
+  Paso 1: Habilitar las características necesarias
+Abre PowerShell o la Terminal de Windows con privilegios de administrador.
+Ejecuta el siguiente comando para habilitar las características necesarias:
+powershell
+Copiar código
+dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+Paso 2: Descargar el kernel de WSL2
+Descarga el kernel de actualización de WSL2 desde el sitio oficial de Microsoft: Descargar kernel de WSL2
+Instala el archivo descargado siguiendo las instrucciones en pantalla.
+Paso 3: Establecer WSL2 como predeterminado
+Ejecuta este comando en PowerShell o la Terminal de Windows:
+powershell
+Copiar código
+wsl --set-default-version 2
+Paso 4: Instalar una distribución de Linux
+Abre Microsoft Store.
+Busca y selecciona la distribución de Linux que prefieras, como Ubuntu, Debian, o Kali Linux.
+Haz clic en Obtener para descargar e instalar la distribución.
+Paso 5: Configurar la distribución
+Abre la distribución instalada desde el menú Inicio.
+Sigue las instrucciones para configurar un usuario y una contraseña.
+Paso 6 (Opcional): Actualizar WSL
+Si deseas usar las funciones más recientes, ejecuta este comando para instalar la última versión de WSL desde Microsoft Store (Windows 10 21H2 o superior y Windows 11):
+
+powershell
+Copiar código
+wsl --update
+Comprobación de la versión de WSL
+Para verificar qué versión de WSL estás utilizando y qué distribuciones están instaladas, ejecuta:
+
+powershell
+Copiar código
+wsl --list --verbose
