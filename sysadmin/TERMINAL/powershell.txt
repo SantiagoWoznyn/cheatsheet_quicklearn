@@ -1,0 +1,2 @@
+resetear el directorio al predeterminado :
+  Set-Location -Path $HOME
