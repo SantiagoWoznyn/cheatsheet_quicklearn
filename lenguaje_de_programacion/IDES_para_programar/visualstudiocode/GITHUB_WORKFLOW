@@ -1,0 +1,11 @@
+instalamos en vs code la extension github repositories
+
+control + shift + p  para abrir la paleta que esta en la parte superior central 
+esta paleta se llama show and run commands
+
+open repository , para abrir un repositorio
+
+se abre una carpeta localmente y se hace un git pull main
+
+en la sidebar esta el source control desde ahi se pushea y se hace un sync
+para que se sincronize lo que esta guardado localmente y se suba al repo de github
