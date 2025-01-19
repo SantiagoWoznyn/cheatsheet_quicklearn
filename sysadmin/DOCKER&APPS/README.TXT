@@ -30,12 +30,12 @@ VAULTGARDEN (GESTOR DE CONTRASEÑAS)
 GOTIFY (NOTIFICACIONES)
 ELK STACK (LOGS SERVER , alertas etc)
 HOME ASSISTANT
-algun que otro bookmark manager??
+algun que otro bookmark manager?? COMO Linkwarden
 
 ======AUTOMATIZACION======
 KESTRA 
 
-======DOCUMENTACION E INFORMACION ======
+======ORGANIZADOR,DOCUMENTACION E INFORMACION ======
 GITEA
 AFFINE
 
