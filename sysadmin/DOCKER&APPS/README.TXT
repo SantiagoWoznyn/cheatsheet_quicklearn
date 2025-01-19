@@ -30,7 +30,7 @@ VAULTGARDEN (GESTOR DE CONTRASEÑAS)
 GOTIFY (NOTIFICACIONES)
 ELK STACK (LOGS SERVER , alertas etc)
 HOME ASSISTANT
-algun que otro bookmanager??
+algun que otro bookmark manager??
 
 ======AUTOMATIZACION======
 KESTRA 
