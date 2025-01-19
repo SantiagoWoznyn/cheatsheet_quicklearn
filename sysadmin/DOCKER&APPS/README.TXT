@@ -24,20 +24,25 @@ DOCKERAPP LIST:
 ======ADMIN AND DASHBOARD======
 CASA OS 
 PORTAINER
+HOMARR (dashboard)
+NEXTERM (accesos ssh,vnc,rdp)
+GOTIFY (NOTIFICACIONES)
+ELK STACK (LOGS SERVER , alertas etc)
 HOME ASSISTANT
 
 ======AUTOMATIZACION======
-KESTRA
+KESTRA 
 
-======DOCUMENTACION E INFORMACION======
+======DOCUMENTACION E INFORMACION ======
 GITEA
-OBSIDIAN
+AFFINE
 
 ======BASE DE DATOS======
-MYSQL DE MICROSOFT (docker-compose) : https://github.com/SantiagoWoznyn/scripts/blob/main/script%20x64/dockersh/mysql_install_1.sh 
+MYSQL DE MICROSOFT 
 
 ======SERVER======
-NGINX
+FILE SERVER O NEXTCLOUD (nube personal para subir archivos)
+NGINX (servidor web)
 COOLIFY    https://coolify.io/docs/
-CODE SERVER  :  ES COMO VISUAL STUDIO CODE :   https://hub.docker.com/r/linuxserver/code-server  : PERO SERVER
+VISUAL STUDIO CODE SERVER  :  ES COMO VISUAL STUDIO CODE :   https://hub.docker.com/r/linuxserver/code-server  : PERO SERVER
   podes codear desde fuera de la red con vpn o en la red
