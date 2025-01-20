@@ -21,22 +21,23 @@ SE ENCUENTRA EN : https://github.com/Lissy93/portainer-templates
 
 DOCKERAPP LIST:
 
-======ADMIN AND DASHBOARD======
+======ADMIN======
 CASA OS 
-PORTAINER
-HOMARR (dashboard)
-NEXTERM (accesos ssh,vnc,rdp)
-VAULTGARDEN (GESTOR DE CONTRASEÑAS)
-GOTIFY (NOTIFICACIONES)
-ELK STACK (LOGS SERVER , alertas etc)
+PORTAINER       (gestor de dockers)
+HOMARR          (dashboard)
+NEXTERM         (accesos ssh,vnc,rdp)
+VAULTGARDEN     (GESTOR DE CONTRASEÑAS)
+GOTIFY          (NOTIFICACIONES)
+ELK STACK       (LOGS SERVER , alertas etc)
 HOME ASSISTANT
-algun que otro bookmark manager?? COMO Linkwarden
+Linkwarden      (bookmark manager)
+GITEA           (es un github local)  
 
 ======AUTOMATIZACION======
 KESTRA 
 
 ======ORGANIZADOR,DOCUMENTACION E INFORMACION ======
-GITEA
+logseq
 AFFINE
 
 ======BASE DE DATOS======
