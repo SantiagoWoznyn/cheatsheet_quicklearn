@@ -103,4 +103,4 @@ Una vez que hayas asociado tu repositorio local con el remoto, puedes subir tus 
 
 -------------------------------------------------------------------------------------
 
-DESPUES PODEMOS OPERA CON LA EXTENSION GITHUB REPOSITORIES
+DESPUES PODEMOS OPERAR CON LA EXTENSION GITHUB REPOSITORIES PARA HACER COMMIT Y HACER SYNC CON EL REPOSITORIO EN GITHUB O GITEA
