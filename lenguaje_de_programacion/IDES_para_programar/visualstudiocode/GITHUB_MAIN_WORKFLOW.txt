@@ -100,3 +100,7 @@ Una vez que hayas asociado tu repositorio local con el remoto, puedes subir tus 
         git commit -m "mensaje" → Hace un commit con los archivos agregados.
         git remote add origin <url> → Conecta tu repositorio local con un repositorio remoto (Gitea, GitHub, etc.).
         git push -u origin main → Sube tus cambios al repositorio remoto.
+
+-------------------------------------------------------------------------------------
+
+DESPUES PODEMOS OPERA CON LA EXTENSION GITHUB REPOSITORIES
