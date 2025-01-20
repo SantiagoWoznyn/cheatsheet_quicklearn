@@ -1,0 +1,102 @@
+ Si hablamos de autenticación en Git (por ejemplo, en un repositorio de Gitea o GitHub), 
+ es importante tener en cuenta cómo manejar la autenticación para hacer push y pull al repositorio remoto, 
+ especialmente si estás trabajando con tokens de acceso o credenciales protegidas como hashes de contraseñas.
+
+Voy a explicarlo de manera detallada:
+
+🔹 Flujo con autenticación (login y uso de token de acceso):
+Autenticación mediante un token de acceso personal (PAT)
+Cuando te conectas a un repositorio remoto como Gitea o GitHub, no es recomendable usar tu contraseña directamente para las operaciones 
+de git push, git pull, etc. En su lugar, las plataformas como Gitea y GitHub te permiten usar un token de acceso personal (PAT), 
+que es más seguro.
+
+Pasos para usar el token de acceso en Git (sin necesidad de login cada vez):
+
+1️⃣ Generar un Token de Acceso Personal (PAT)
+En Gitea (o GitHub), puedes generar un token de acceso personal que reemplazará tu contraseña al realizar operaciones con Git. 
+Este token tiene permisos específicos que puedes configurar (por ejemplo, lectura y escritura en repositorios).
+
+Gitea: Ve a la configuración de tu cuenta en Gitea, busca la opción de tokens de acceso personal y genera un nuevo token.
+GitHub: Ve a Settings > Developer settings > Personal access tokens.
+
+2️⃣ Usar el Token en Git
+Una vez que tienes el token, lo usarás como contraseña cuando Git te pida autenticación.
+
+Cuando te pida usuario y contraseña al hacer un git push o git pull, en lugar de tu contraseña, 
+debes poner el token de acceso como "contraseña".
+Ejemplo:
+
+    git push https://<your-username>:<your-token>@172.24.39.184:3003/santy/gonza_bootstrap_1.git
+
+    En este caso, <your-username> sería tu nombre de usuario de Gitea, y <your-token> sería el token que generaste.
+
+3️⃣ Autenticación con el git credential helper
+Para evitar tener que ingresar tu token cada vez que interactúas con tu repositorio remoto, 
+puedes almacenar tu token en el sistema utilizando el git credential helper.
+
+Esto guardará las credenciales (en este caso, tu token) de manera segura para que no tengas que introducirlo cada vez.
+
+Configurar el credential helper en Git:
+
+Para almacenar tus credenciales (usuario y token) en tu sistema, usa el siguiente comando:
+
+    git config --global credential.helper store
+
+Después de autenticarte una vez, Git almacenará las credenciales y no te pedirá ingresar el token en futuras operaciones.
+
+-------------------------------------------------------------------------------------
+
+🔹 Pasos para inicializar y asociar un repositorio local con uno remoto:
+
+1️⃣ Inicializar un repositorio local
+
+Primero, debes inicializar un repositorio Git en tu proyecto local. Esto crea un subdirectorio oculto .git dentro de tu proyecto, 
+que es donde Git guarda toda la información relacionada con el repositorio (como los historiales de commits, referencias, etc.).
+
+    git init
+
+Después de ejecutar este comando, tu carpeta local estará lista para ser un repositorio de Git. 
+Si miras dentro de la carpeta, ahora verás una carpeta oculta llamada .git.
+
+2️⃣ Agregar archivos al repositorio
+Luego, debes agregar los archivos que quieres que Git comience a rastrear. 
+El comando git add es lo que le dice a Git que estos archivos deben ser incluidos en el próximo commit.
+
+Para agregar todos los archivos del directorio actual, puedes usar:
+
+    git add .
+
+Este comando agrega todos los archivos que están en la carpeta al índice de Git, es decir, los prepara para el siguiente commit.
+
+3️⃣ Hacer un commit de los archivos
+Después de agregar los archivos, haces un commit para guardar esos cambios en tu repositorio local. 
+El commit es un punto en el historial de tu repositorio, similar a un "registro de cambios."
+
+
+    git commit -m "Mi primer commit"
+
+    Esto crea un registro en el historial de Git con el mensaje que pongas, 
+    y los archivos agregados en el paso anterior se guardan en el repositorio local.
+
+4️⃣ Conectar tu repositorio local con uno remoto
+Una vez que tienes tu repositorio local y tus primeros cambios registrados, puedes asociarlo a un repositorio remoto (como GitHub o Gitea) para compartir tus cambios y colaborar con otros.
+
+Primero, debes agregar la URL del repositorio remoto con git remote add. Por ejemplo, para asociar un repositorio en Gitea:
+
+    git remote add origin http://172.24.39.184:3003/santy/gonza_bootstrap_1.git
+
+    Aquí, origin es el nombre por defecto para el repositorio remoto, y la URL es donde Git enviará tus cambios.
+
+5️⃣ Subir los cambios al repositorio remoto
+Una vez que hayas asociado tu repositorio local con el remoto, puedes subir tus cambios (push) usando el comando:
+
+    git push -u origin main
+
+    Este comando sube los commits de la rama main a tu repositorio remoto en Gitea. Si el repositorio remoto no tiene una rama main aún, Git la creará.
+
+🔹 Resumen del flujo completo:
+        git init → Inicializa un repositorio Git local.
+        git add . → Agrega todos los archivos del proyecto al repositorio local.
+        git commit -m "mensaje" → Hace un commit con los archivos agregados.
+        git remote add origin <url> → Conecta tu repositorio local con un repositorio remoto (Gitea, GitHub, etc.).
+        git push -u origin main → Sube tus cambios al repositorio remoto.
