@@ -1,0 +1,26 @@
+Pasos para deshabilitar el registro de nuevos usuarios en Gitea:
+Accede al contenedor de Gitea:
+
+    docker exec -it <nombre_del_contenedor> /bin/sh
+
+    O si usas bash dentro del contenedor:
+
+    docker exec -it <nombre_del_contenedor> bash
+
+Edita el archivo de configuración app.ini
+Por lo general, se encuentra en /data/gitea/conf/app.ini. Usa un editor como vi o nano:
+
+    vi o nano /data/gitea/conf/app.ini
+
+Busca y edita la sección [service]
+Asegúrate de que la opción DISABLE_REGISTRATION esté establecida en true:
+
+    [service]
+    DISABLE_REGISTRATION = true
+
+Guarda los cambios y reinicia el contenedor
+
+    docker restart <nombre_del_contenedor>
+
+Con esto, el registro de nuevos usuarios quedará deshabilitado. 
+Solo los administradores podrán crear cuentas manualmente
