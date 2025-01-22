@@ -47,5 +47,8 @@ MYSQL DE MICROSOFT
 FILE SERVER O NEXTCLOUD (nube personal para subir archivos)
 NGINX (servidor web)
 COOLIFY    https://coolify.io/docs/
+
+
+======ides selfhosted======
 VISUAL STUDIO CODE SERVER  :  ES COMO VISUAL STUDIO CODE :   https://hub.docker.com/r/linuxserver/code-server  : PERO SERVER
   podes codear desde fuera de la red con vpn o en la red
