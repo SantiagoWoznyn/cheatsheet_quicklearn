@@ -22,7 +22,7 @@ SE ENCUENTRA EN : https://github.com/Lissy93/portainer-templates
 DOCKERAPP LIST:
 
 ======ADMIN======
-CASA OS 
+CASA OS         
 PORTAINER       (gestor de dockers)
 HOMARR          (dashboard)
 NEXTERM         (accesos ssh,vnc,rdp)
@@ -41,11 +41,11 @@ logseq
 AFFINE
 
 ======BASE DE DATOS======
-MYSQL DE MICROSOFT 
+MYSQL
 
 ======SERVER======
 FILE SERVER O NEXTCLOUD (nube personal para subir archivos)
-NGINX (servidor web)
+NGINX PROXY MANAGER (servidor web)
 COOLIFY    https://coolify.io/docs/
 
 
