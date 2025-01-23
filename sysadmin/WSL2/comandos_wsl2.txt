@@ -2,7 +2,7 @@ lista de distribuciones que estan andando
   wsl -l -v
 
 instalar distro
-    wsl install
+    wsl --install -d Ubuntu
 
 apagar distribucion
     wsl --terminate (distribucion)
