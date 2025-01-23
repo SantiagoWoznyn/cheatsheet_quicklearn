@@ -1,0 +1,5 @@
+Get-FileHash C:\Users\user1\Downloads\Contoso8_1_ENT.iso -Algorithm SHA384 | Format-List
+
+Algorithm : SHA384
+Hash      : 20AB1C2EE19FC96A7C66E33917D191A24E3CE9DAC99DB7C786ACCE31E559144FEAFC695C58E508E2EBBC9D3C96F21FA3
+Path      : C:\Users\user1\Downloads\Contoso8_1_ENT.iso
