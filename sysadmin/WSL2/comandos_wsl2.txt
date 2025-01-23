@@ -1,6 +1,9 @@
 lista de distribuciones que estan andando
   wsl -l -v
 
+instalar distro
+    wsl install
+
 apagar distribucion
     wsl --terminate (distribucion)
     wsl --terminate kali-linux
