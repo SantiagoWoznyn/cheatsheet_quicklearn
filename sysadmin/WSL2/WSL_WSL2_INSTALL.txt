@@ -44,6 +44,17 @@ Abre la distribución instalada desde el menú Inicio.
 
 Sigue las instrucciones para configurar un usuario y una contraseña.
 
+en la pagina aparece asi 
+((((((((((((
+Paso 4: Descarga del paquete de actualización del kernel de Linux
+El paquete de actualización del kernel de Linux instala la versión más reciente del kernel de Linux de WSL 2 para ejecutar WSL dentro de la imagen del sistema operativo Windows. (Para ejecutar WSL desde Microsoft Store, con actualizaciones insertadas con más frecuencia, use wsl.exe --install o wsl.exe --update).
+
+Descargue la versión más reciente:
+
+Paquete de actualización del kernel de Linux en WSL 2 para máquinas x64           este es es link que te da microsoft
+
+))))))))))))))))))
+
 -----------------------------------------------------------------------------
 
 Paso 6 (Opcional): Actualizar WSL
