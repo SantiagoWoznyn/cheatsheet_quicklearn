@@ -1,1 +1,23 @@
+Instalar un servidor X en Windows
+Descarga e instala un servidor X como VcXsrv o Xming en tu máquina Windows. Puedes obtener VcXsrv aquí:
 
+Descargar VcXsrv
+    https://vcxsrv.com
+
+--------------------------------------------------------------------------------------------------
+
+en wsl2 con ubuntu en la terminal poner
+
+    export DISPLAY=$(ip route | awk '/default/ {print $3}'):0
+
+instalar Virt-Manager
+
+Ahora, instala Virt-Manager en WSL2:
+
+    sudo apt update
+    sudo apt install virt-manager
+----------------------------------------------------------------------
+
+ejecuta
+
+sudo virt-manager
