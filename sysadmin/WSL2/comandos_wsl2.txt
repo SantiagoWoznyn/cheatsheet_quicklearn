@@ -4,6 +4,9 @@ lista de distribuciones que estan andando
 instalar distro
     wsl --install -d Ubuntu
 
+conectarse a una distro
+  wsl -d Ubuntu
+
 apagar distribucion
     wsl --terminate (distribucion)
     wsl --terminate kali-linux
