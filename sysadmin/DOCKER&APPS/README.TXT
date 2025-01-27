@@ -24,14 +24,16 @@ DOCKERAPP LIST:
 ======ADMIN======
 CASA OS         
 PORTAINER       (gestor de dockers)
-HOMARR          (dashboard)
-NEXTERM         (accesos ssh,vnc,rdp)
 VAULTGARDEN     (GESTOR DE CONTRASEÑAS)
+HOME ASSISTANT
 GOTIFY          (NOTIFICACIONES)
 ELK STACK       (LOGS SERVER , alertas etc)
-HOME ASSISTANT
 Linkwarden      (bookmark manager)
-GITEA           (es un github local)  
+GITEA           (es un github local) 
+
+======ACCESS======
+HOMARR          (dashboard)
+NEXTERM         (accesos ssh,vnc,rdp)
 
 ======AUTOMATIZACION======
 KESTRA 
