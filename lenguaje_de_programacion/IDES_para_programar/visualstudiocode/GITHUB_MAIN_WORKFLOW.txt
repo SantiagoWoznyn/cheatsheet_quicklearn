@@ -1,3 +1,68 @@
+🔹 Pasos para inicializar y asociar un repositorio local con uno remoto:
+
+1️⃣ Inicializar un repositorio local
+
+Primero, debes inicializar un repositorio Git en tu proyecto local. Esto crea un subdirectorio oculto .git dentro de tu proyecto, 
+que es donde Git guarda toda la información relacionada con el repositorio (como los historiales de commits, referencias, etc.).
+
+    git init
+
+Después de ejecutar este comando, tu carpeta local estará lista para ser un repositorio de Git. 
+Si miras dentro de la carpeta, ahora verás una carpeta oculta llamada .git.
+
+2️⃣ Agregar archivos al repositorio
+Luego, debes agregar los archivos que quieres que Git comience a rastrear. 
+El comando git add es lo que le dice a Git que estos archivos deben ser incluidos en el próximo commit.
+
+Para agregar todos los archivos del directorio actual, puedes usar:
+
+    git add .
+
+Este comando agrega todos los archivos que están en la carpeta al índice de Git, es decir, los prepara para el siguiente commit.
+
+3️⃣ Hacer un commit de los archivos
+Después de agregar los archivos, haces un commit para guardar esos cambios en tu repositorio local. 
+El commit es un punto en el historial de tu repositorio, similar a un "registro de cambios."
+
+
+    git commit -m "Mi primer commit"
+
+    Esto crea un registro en el historial de Git con el mensaje que pongas, 
+    y los archivos agregados en el paso anterior se guardan en el repositorio local.
+
+4️⃣ EL PASAO A ESTA MAS ABAJO TRATA DE COMO CONECTARTE github o gitea a traves de un 
+token que generas
+
+PASO B 
+    Conectar tu repositorio local con uno remoto
+    Una vez que tienes tu repositorio local y tus primeros cambios registrados, puedes asociarlo a un repositorio remoto (como GitHub o Gitea) para compartir tus cambios y colaborar con otros.
+
+Primero, debes agregar la URL del repositorio remoto con git remote add. Por ejemplo, para asociar un repositorio en Gitea:
+
+    git remote add origin http://572.2224.3129.123284:xxc3003/santy/gonza_bootstrap_1.git
+
+    Aquí, origin es el nombre por defecto para el repositorio remoto, y la URL es donde Git enviará tus cambios.
+
+    
+
+5️⃣ Subir los cambios al repositorio remoto
+Una vez que hayas asociado tu repositorio local con el remoto, puedes subir tus cambios (push) usando el comando:
+
+    git push -u origin main
+
+    Este comando sube los commits de la rama main a tu repositorio remoto en Gitea. Si el repositorio remoto no tiene una rama main aún, Git la creará.
+
+🔹 Resumen del flujo completo:
+        git init → Inicializa un repositorio Git local.
+        git add . → Agrega todos los archivos del proyecto al repositorio local.
+        git commit -m "mensaje" → Hace un commit con los archivos agregados.
+        git remote add origin <url> → Conecta tu repositorio local con un repositorio remoto (Gitea, GitHub, etc.).
+        git push -u origin main → Sube tus cambios al repositorio remoto.
+
+ --------------------------------------------------------------------------
+ 
+4 B
+
  Si hablamos de autenticación en Git (por ejemplo, en un repositorio de Gitea o GitHub), 
  es importante tener en cuenta cómo manejar la autenticación para hacer push y pull al repositorio remoto, 
  especialmente si estás trabajando con tokens de acceso o credenciales protegidas como hashes de contraseñas.
@@ -49,62 +114,6 @@ Para almacenar tus credenciales (usuario y token) en tu sistema, usa el siguient
 Después de autenticarte una vez, Git almacenará las credenciales y no te pedirá ingresar el token en futuras operaciones.
 
 -------------------------------------------------------------------------------------
-
-🔹 Pasos para inicializar y asociar un repositorio local con uno remoto:
-
-1️⃣ Inicializar un repositorio local
-
-Primero, debes inicializar un repositorio Git en tu proyecto local. Esto crea un subdirectorio oculto .git dentro de tu proyecto, 
-que es donde Git guarda toda la información relacionada con el repositorio (como los historiales de commits, referencias, etc.).
-
-    git init
-
-Después de ejecutar este comando, tu carpeta local estará lista para ser un repositorio de Git. 
-Si miras dentro de la carpeta, ahora verás una carpeta oculta llamada .git.
-
-2️⃣ Agregar archivos al repositorio
-Luego, debes agregar los archivos que quieres que Git comience a rastrear. 
-El comando git add es lo que le dice a Git que estos archivos deben ser incluidos en el próximo commit.
-
-Para agregar todos los archivos del directorio actual, puedes usar:
-
-    git add .
-
-Este comando agrega todos los archivos que están en la carpeta al índice de Git, es decir, los prepara para el siguiente commit.
-
-3️⃣ Hacer un commit de los archivos
-Después de agregar los archivos, haces un commit para guardar esos cambios en tu repositorio local. 
-El commit es un punto en el historial de tu repositorio, similar a un "registro de cambios."
-
-
-    git commit -m "Mi primer commit"
-
-    Esto crea un registro en el historial de Git con el mensaje que pongas, 
-    y los archivos agregados en el paso anterior se guardan en el repositorio local.
-
-4️⃣ Conectar tu repositorio local con uno remoto
-Una vez que tienes tu repositorio local y tus primeros cambios registrados, puedes asociarlo a un repositorio remoto (como GitHub o Gitea) para compartir tus cambios y colaborar con otros.
-
-Primero, debes agregar la URL del repositorio remoto con git remote add. Por ejemplo, para asociar un repositorio en Gitea:
-
-    git remote add origin http://172.24.39.184:3003/santy/gonza_bootstrap_1.git
-
-    Aquí, origin es el nombre por defecto para el repositorio remoto, y la URL es donde Git enviará tus cambios.
-
-5️⃣ Subir los cambios al repositorio remoto
-Una vez que hayas asociado tu repositorio local con el remoto, puedes subir tus cambios (push) usando el comando:
-
-    git push -u origin main
-
-    Este comando sube los commits de la rama main a tu repositorio remoto en Gitea. Si el repositorio remoto no tiene una rama main aún, Git la creará.
-
-🔹 Resumen del flujo completo:
-        git init → Inicializa un repositorio Git local.
-        git add . → Agrega todos los archivos del proyecto al repositorio local.
-        git commit -m "mensaje" → Hace un commit con los archivos agregados.
-        git remote add origin <url> → Conecta tu repositorio local con un repositorio remoto (Gitea, GitHub, etc.).
-        git push -u origin main → Sube tus cambios al repositorio remoto.
-
 -------------------------------------------------------------------------------------
 
 DESPUES PODEMOS OPERAR CON LA EXTENSION GITHUB REPOSITORIES PARA HACER COMMIT Y HACER SYNC CON EL REPOSITORIO EN GITHUB O GITEA
