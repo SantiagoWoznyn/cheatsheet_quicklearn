@@ -24,3 +24,32 @@ Guarda los cambios y reinicia el contenedor
 
 Con esto, el registro de nuevos usuarios quedará deshabilitado. 
 Solo los administradores podrán crear cuentas manualmente
+-------------------------------------------------------------------------
+
+SI USAS VI
+
+En vi o vim, puedes borrar texto de varias formas:
+
+1 - Borrar caracteres
+x → Borra el carácter bajo el cursor.
+X → Borra el carácter antes del cursor.
+Borrar palabras
+dw → Borra desde el cursor hasta el final de la palabra.
+dW → Borra una palabra completa (incluyendo espacios).
+diw → Borra la palabra entera donde está el cursor.
+
+2 - Entra en modo inserción:
+i → Inserta texto antes del cursor.
+I → Inserta al inicio de la línea.
+a → Añade texto después del cursor.
+A → Añade texto al final de la línea.
+o → Abre una nueva línea debajo.
+O → Abre una nueva línea arriba.
+Escribe tu texto.
+
+3 - Guardar y salir
+Esc → Salir del modo de inserción.
+:w → Guarda el archivo.
+:q → Sale de vi.
+:wq → Guarda y sale.
+:q! → Sale sin guardar.
