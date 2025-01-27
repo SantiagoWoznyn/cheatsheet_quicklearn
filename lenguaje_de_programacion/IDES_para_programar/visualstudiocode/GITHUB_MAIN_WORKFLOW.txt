@@ -17,6 +17,7 @@ En Gitea (o GitHub), puedes generar un token de acceso personal que reemplazará
 Este token tiene permisos específicos que puedes configurar (por ejemplo, lectura y escritura en repositorios).
 
 Gitea: Ve a la configuración de tu cuenta en Gitea, busca la opción de tokens de acceso personal y genera un nuevo token.
+Gitea: configuracion > Aplicaciones > generar token
 GitHub: Ve a Settings > Developer settings > Personal access tokens.
 
 2️⃣ Usar el Token en Git
