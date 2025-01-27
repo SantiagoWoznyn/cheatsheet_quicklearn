@@ -59,7 +59,7 @@ Una vez que hayas asociado tu repositorio local con el remoto, puedes subir tus 
         git remote add origin <url> → Conecta tu repositorio local con un repositorio remoto (Gitea, GitHub, etc.).
         git push -u origin main → Sube tus cambios al repositorio remoto.
 
- --------------------------------------------------------------------------
+ -----------------------------------------------------------------------------------------------------------------------------------
  
 4 B
 
@@ -115,5 +115,7 @@ Después de autenticarte una vez, Git almacenará las credenciales y no te pedir
 
 -------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------
+podemos HACER UN git clone http://<tu-gitea>/nombre_usuario/nombre_repositorio.git O git pull https://<your-username>:<your-token>@<aca_va_el_.git>
+E INICIAR EL GIT Y REPETIR LOS PASOS ANTERIORES 
 
 DESPUES PODEMOS OPERAR CON LA EXTENSION GITHUB REPOSITORIES PARA HACER COMMIT Y HACER SYNC CON EL REPOSITORIO EN GITHUB O GITEA
