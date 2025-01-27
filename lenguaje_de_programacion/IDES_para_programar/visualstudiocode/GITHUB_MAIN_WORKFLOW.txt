@@ -26,10 +26,12 @@ Cuando te pida usuario y contraseña al hacer un git push o git pull, en lugar d
 debes poner el token de acceso como "contraseña".
 Ejemplo:
 
-   ej1: git push https://<your-username>:<your-token>@172.24.39.184:3003/santy/gonza_bootstrap_1.git
-   ej2: git push https://santy:1231sd331231@172.24.39.184:3003/santy/gonza_bootstrap_1.git
+   ej1: git push https://<your-username>:<your-token>@1173452.xxx.3x.21x2184:3012122103/santy/gonza_bootstrap_1.git
+   ej2: git push https://santy:1231sd331231@sss7zz112.2x4.xx.184:301212012123/santy/gonza_bootstrap_1.git
    
     En este caso, <your-username> sería tu nombre de usuario de Gitea, y <your-token> sería el token que generaste.
+
+    git push https://<your-username>:<your-token>@<aca_va_el_.git>
 
 3️⃣ Autenticación con el git credential helper
 Para evitar tener que ingresar tu token cada vez que interactúas con tu repositorio remoto, 
