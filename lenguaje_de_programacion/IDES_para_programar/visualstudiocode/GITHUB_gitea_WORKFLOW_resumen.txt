@@ -1,0 +1,23 @@
+Resumen del flujo completo:
+        git init → Inicializa un repositorio Git local.
+        git add . → Agrega todos los archivos del proyecto al repositorio local.
+        git commit -m "mensaje" → Hace un commit con los archivos agregados.
+
+        git push https://<your-username>:<your-token>@<aca_va_el_.git>
+
+        git config --global credential.helper store
+
+        git remote add origin <url> → Conecta tu repositorio local con un repositorio remoto (Gitea, GitHub, etc.)
+
+        git push -u origin main → Sube tus cambios al repositorio remoto.
+
+
+
+WORKFLOW DEL DIA A DIA
+PARA EL DIA A DIA HACEMO ESTO
+ 
+        git add . → Agrega todos los archivos del proyecto al repositorio local.
+
+        git commit -m "mensaje" → Hace un commit con los archivos agregados.
+
+        git push -u origin main → Sube tus cambios al repositorio remoto.
