@@ -119,3 +119,20 @@ podemos HACER UN git clone http://<tu-gitea>/nombre_usuario/nombre_repositorio.g
 E INICIAR EL GIT Y REPETIR LOS PASOS ANTERIORES 
 
 DESPUES PODEMOS OPERAR CON LA EXTENSION GITHUB REPOSITORIES PARA HACER COMMIT Y HACER SYNC CON EL REPOSITORIO EN GITHUB O GITEA
+
+para ver con que repo esta asociado
+    git remote -v
+
+git status
+ para ver el estado
+--------------------------------------------------------------------------------------------------------------------
+para eliminar el link al repositorio, no el repo local sino el linkeo que hace push y pull a github o gitea
+
+git remote remove origin
+
+rm -rf .git en linux
+
+Remove-Item -Recurse -Force .git en powershell
+
+
+
