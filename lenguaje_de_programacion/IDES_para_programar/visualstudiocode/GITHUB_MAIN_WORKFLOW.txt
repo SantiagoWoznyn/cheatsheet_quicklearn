@@ -61,12 +61,12 @@ Una vez que hayas asociado tu repositorio local con el remoto, puedes subir tus 
 
 WORKFLOW DEL DIA A DIA
 PARA EL DIA A DIA HACEMO ESTO
+ 
         git add . → Agrega todos los archivos del proyecto al repositorio local.
-        git commit -m "mensaje" → Hace un commit con los archivos agregados.
-        git remote add origin <url> → Conecta tu repositorio local con un repositorio remoto (Gitea, GitHub, etc.).
 
-        ESTO ES OPCIONAL PERO MANDALO POR LAS DUDAS
-        git push -u origin main → Sube tus cambios al repositorio remoto. 
+        git commit -m "mensaje" → Hace un commit con los archivos agregados.
+
+        git push -u origin main → Sube tus cambios al repositorio remoto.
 
  -----------------------------------------------------------------------------------------------------------------------------------
  
