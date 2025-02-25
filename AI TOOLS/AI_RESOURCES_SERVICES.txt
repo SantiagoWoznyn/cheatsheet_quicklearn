@@ -10,3 +10,5 @@ WEB AI PARA PROGRAMAR
 
 
 https://aithor.com/es-419  para documentacion ,etc
+
+https://magicloops.dev/es-- para creacion de apis, etc
