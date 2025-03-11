@@ -34,6 +34,50 @@ CREATE USER 'testsan'@'%' IDENTIFIED BY 'tu_contraseña';
 GRANT ALL PRIVILEGES ON *.* TO 'testsan'@'%' WITH GRANT OPTION;
 FLUSH PRIVILEGES;
 
+PRIMERO HACE ESTOOOOOOO ::::::::::
+
+sudo mysql -u root -p
+Luego, ingresa la contraseña del usuario root que configuraste durante la instalación.
+
+2. Crear un usuario con permisos remotos
+Una vez dentro de la consola de MySQL, ejecuta el siguiente comando para crear un nuevo usuario. Asegúrate de reemplazar testsan con el nombre del usuario que deseas y tu_contraseña con la contraseña que desees asignar.
+
+sql
+Copiar
+Editar
+CREATE USER 'testsan'@'%' IDENTIFIED BY 'tu_contraseña';
+Aquí:
+
+'testsan' es el nombre del usuario.
+'%' permite el acceso remoto desde cualquier dirección IP. Si quieres restringir el acceso solo a una IP específica, puedes poner esa IP en lugar de % (por ejemplo, '192.168.1.100').
+3. Asignar privilegios al usuario
+Ahora, otorga permisos completos al usuario sobre todas las bases de datos. Esto permitirá al usuario testsan realizar todas las operaciones sobre cualquier base de datos.
+
+sql
+Copiar
+Editar
+GRANT ALL PRIVILEGES ON *.* TO 'testsan'@'%' WITH GRANT OPTION;
+ALL PRIVILEGES otorga todos los permisos disponibles.
+*.* indica que estos permisos se aplican a todas las bases de datos y tablas.
+4. Aplicar los cambios
+Después de crear el usuario y asignar los privilegios, es necesario recargar los privilegios para que los cambios surtan efecto:
+
+sql
+Copiar
+Editar
+FLUSH PRIVILEGES;
+5. Salir de MySQL
+Para salir de la consola de MySQL, simplemente escribe:
+
+sql
+Copiar
+Editar
+EXIT;
+Con esto, el usuario testsan estará creado y podrá conectarse de forma remota a MySQL desde cualquier dirección IP. Si necesitas conectar desde otro servidor, usa las credenciales de este usuario.
+
+¿Te gustaría que te ayude a verificar si puedes acceder remotamente a la base de datos?
+----------------------------------------------------------------------------
+-----------------------------------------------------------------------------
 Configurar MySQL para acceso remoto
 Edita el archivo de configuración:
 
