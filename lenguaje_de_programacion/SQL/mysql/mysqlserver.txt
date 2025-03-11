@@ -1,0 +1,82 @@
+Pasos para instalar MySQL Server en Ubuntu Server:
+Actualizar paquetes
+
+bash
+Copiar
+Editar
+sudo apt update && sudo apt upgrade -y
+Instalar MySQL Server
+
+bash
+Copiar
+Editar
+sudo apt install mysql-server -y
+Habilitar y verificar MySQL
+
+bash
+Copiar
+Editar
+sudo systemctl enable --now mysql
+sudo systemctl status mysql
+Ejecutar el script de configuración inicial
+
+bash
+Copiar
+Editar
+sudo mysql_secure_installation
+Te pedirá configurar una contraseña para el usuario root.
+Puedes desactivar el acceso remoto del root para mayor seguridad.
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+Crear un usuario con permisos remotos (opcional)
+
+CREATE USER 'testsan'@'%' IDENTIFIED BY 'tu_contraseña';
+GRANT ALL PRIVILEGES ON *.* TO 'testsan'@'%' WITH GRANT OPTION;
+FLUSH PRIVILEGES;
+
+Configurar MySQL para acceso remoto
+Edita el archivo de configuración:
+
+
+sudo nano /etc/mysql/mysql.conf.d/mysqld.cnf
+
+
+Busca la línea:
+
+bind-address = 127.0.0.1
+
+Y cámbiala a:
+
+bind-address = 0.0.0.0
+
+Guarda y cierra (CTRL+X, Y, Enter), luego reinicia MySQL:
+
+sudo systemctl restart mysql
+-----------------------------------------------------
+-------------------------------------------------
+
+
+
+Software para gestionar MySQL visualmente
+Puedes instalar Adminer o Webmin para administrar la base de datos desde una interfaz web.
+
+Instalar Adminer
+
+bash
+Copiar
+Editar
+sudo apt install adminer -y
+sudo a2enconf adminer
+sudo systemctl restart apache2
+Accede desde: http://tu-ip/adminer
+
+Instalar Webmin
+
+bash
+Copiar
+Editar
+wget -qO - http://www.webmin.com/jcameron-key.asc | sudo apt-key add -
+sudo add-apt-repository "deb http://download.webmin.com/download/repository sarge contrib"
+sudo apt update
+sudo apt install webmin -y
+Accede desde: https://tu-ip:10000/
