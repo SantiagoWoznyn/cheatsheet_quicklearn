@@ -1,0 +1,35 @@
+
+Accede a MySQL en el servidor:
+
+mysql -u root -p
+
+Crear la base de datos:
+
+CREATE DATABASE productos_db;
+
+Selecciona la base de datos:
+
+USE productos_db;
+
+
+Crear la tabla:
+
+
+CREATE TABLE productos (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(255) NOT NULL,
+    descripcion TEXT,
+    precio DECIMAL(10, 2),
+    fecha DATE
+);
+
+-------------------------------------------------------------------------------------------------------
+Insertar datos:
+
+
+INSERT INTO productos (nombre, descripcion, precio, fecha)
+VALUES ('Producto 1', 'Descripción del producto 1', 19.99, '2025-03-11');
+
+Ver los datos:
+
+SELECT * FROM productos;
