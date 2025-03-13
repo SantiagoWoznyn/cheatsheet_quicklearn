@@ -1,0 +1,23 @@
+Para cambiar la contraseña del usuario santy en MySQL Server, usa uno de estos métodos:
+
+1️⃣ Método recomendado (para MySQL 5.7 y 8.0)
+sql
+Copiar
+Editar
+ALTER USER 'santy'@'%' IDENTIFIED BY 'NuevaContraseña';
+FLUSH PRIVILEGES;
+🔹 '%' significa que el usuario puede conectarse desde cualquier host. Si solo puede conectarse desde localhost, usa 'santy'@'localhost'.
+
+2️⃣ Método alternativo (si ALTER USER no funciona)
+sql
+Copiar
+Editar
+UPDATE mysql.user SET authentication_string = PASSWORD('NuevaContraseña') WHERE user = 'santy';
+FLUSH PRIVILEGES;
+Después de cambiar la contraseña, intenta iniciar sesión con:
+
+sh
+Copiar
+Editar
+mysql -u santy -p
+Si tienes problemas, dime qué error te da y te ayudo. 🚀
