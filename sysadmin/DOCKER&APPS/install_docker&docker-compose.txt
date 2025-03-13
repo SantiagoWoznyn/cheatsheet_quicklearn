@@ -1,0 +1,23 @@
+1. Requisitos previos
+Asegúrate de tener Docker instalado antes de proceder con la instalación de Docker Compose. Si no tienes Docker instalado, puedes seguir las instrucciones en la documentación oficial.
+
+2. Instalación de Docker Compose en Linux
+Descargar Docker Compose: Abre una terminal y ejecuta el siguiente comando para descargar la última versión de Docker Compose:
+
+bash
+Copiar
+Editar
+sudo curl -L "https://github.com/docker/compose/releases/download/$(curl -s https://api.github.com/repos/docker/compose/releases/latest | jq -r .tag_name)/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+Hacer el archivo ejecutable: Cambia los permisos del archivo para hacerlo ejecutable:
+
+bash
+Copiar
+Editar
+sudo chmod +x /usr/local/bin/docker-compose
+Verificar la instalación: Comprueba que Docker Compose se haya instalado correctamente con el siguiente comando:
+
+bash
+Copiar
+Editar
+docker-compose --version
+Esto debería mostrarte la versión de Docker Compose instalada.
