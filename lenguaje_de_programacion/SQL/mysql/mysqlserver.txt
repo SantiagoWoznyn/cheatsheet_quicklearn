@@ -1,89 +1,133 @@
 Pasos para instalar MySQL Server en Ubuntu Server:
+
 Actualizar paquetes
 
-bash
-Copiar
-Editar
-sudo apt update && sudo apt upgrade -y
+    sudo apt update && sudo apt upgrade -y
+
 Instalar MySQL Server
 
-bash
-Copiar
-Editar
-sudo apt install mysql-server -y
+    sudo apt install mysql-server -y
+
 Habilitar y verificar MySQL
 
-bash
-Copiar
-Editar
-sudo systemctl enable --now mysql
-sudo systemctl status mysql
+    sudo systemctl enable --now mysql
+    sudo systemctl status mysql
+
 Ejecutar el script de configuración inicial
 
-bash
-Copiar
-Editar
-sudo mysql_secure_installation
+  sudo mysql_secure_installation
+
 Te pedirá configurar una contraseña para el usuario root.
 Puedes desactivar el acceso remoto del root para mayor seguridad.
+
 --------------------------------------------------------------------
 --------------------------------------------------------------------
 Crear un usuario con permisos remotos (opcional)
 
-CREATE USER 'testsan'@'%' IDENTIFIED BY 'tu_contraseña';
-GRANT ALL PRIVILEGES ON *.* TO 'testsan'@'%' WITH GRANT OPTION;
-FLUSH PRIVILEGES;
+  CREATE USER 'testsan'@'%' IDENTIFIED BY 'tu_contraseña';
+  GRANT ALL PRIVILEGES ON *.* TO 'testsan'@'%' WITH GRANT OPTION;
+  FLUSH PRIVILEGES;
 
 PRIMERO HACE ESTOOOOOOO ::::::::::
 
-sudo mysql -u root -p
+  sudo mysql -u root -p
+
 Luego, ingresa la contraseña del usuario root que configuraste durante la instalación.
 
 2. Crear un usuario con permisos remotos
 Una vez dentro de la consola de MySQL, ejecuta el siguiente comando para crear un nuevo usuario. Asegúrate de reemplazar testsan con el nombre del usuario que deseas y tu_contraseña con la contraseña que desees asignar.
 
-sql
-Copiar
-Editar
-CREATE USER 'testsan'@'%' IDENTIFIED BY 'tu_contraseña';
+
+    CREATE USER 'testsan'@'%' IDENTIFIED BY 'tu_contraseña';
+
 Aquí:
 
 'testsan' es el nombre del usuario.
 '%' permite el acceso remoto desde cualquier dirección IP. Si quieres restringir el acceso solo a una IP específica, puedes poner esa IP en lugar de % (por ejemplo, '192.168.1.100').
+
 3. Asignar privilegios al usuario
 Ahora, otorga permisos completos al usuario sobre todas las bases de datos. Esto permitirá al usuario testsan realizar todas las operaciones sobre cualquier base de datos.
 
-sql
-Copiar
-Editar
-GRANT ALL PRIVILEGES ON *.* TO 'testsan'@'%' WITH GRANT OPTION;
+  GRANT ALL PRIVILEGES ON *.* TO 'testsan'@'%' WITH GRANT OPTION;
+
 ALL PRIVILEGES otorga todos los permisos disponibles.
 *.* indica que estos permisos se aplican a todas las bases de datos y tablas.
+
 4. Aplicar los cambios
 Después de crear el usuario y asignar los privilegios, es necesario recargar los privilegios para que los cambios surtan efecto:
 
-sql
-Copiar
-Editar
-FLUSH PRIVILEGES;
+    FLUSH PRIVILEGES;
+
 5. Salir de MySQL
 Para salir de la consola de MySQL, simplemente escribe:
 
-sql
-Copiar
-Editar
-EXIT;
+    EXIT;
+
 Con esto, el usuario testsan estará creado y podrá conectarse de forma remota a MySQL desde cualquier dirección IP. Si necesitas conectar desde otro servidor, usa las credenciales de este usuario.
 
 ¿Te gustaría que te ayude a verificar si puedes acceder remotamente a la base de datos?
+
+-------------------------------------------------------------------------------
+---------------------------------------------------------------------------
+
+en mysqlserver ingreso con root y como puedo ver los usuarios
+ChatGPT dijo:
+Para ver los usuarios en Microsoft SQL Server, puedes ejecutar la siguiente consulta en tu base de datos:
+
+1️⃣ Listar todos los usuarios de la instancia de SQL Server
+sql
+Copiar
+Editar
+SELECT name, create_date, modify_date 
+FROM sys.sql_logins;
+2️⃣ Listar los usuarios de una base de datos específica
+Si quieres ver los usuarios de una base de datos en particular, primero usa la base de datos y luego ejecuta:
+
+sql
+Copiar
+Editar
+USE NombreDeLaBaseDeDatos;
+GO
+SELECT name 
+FROM sys.database_principals
+WHERE type IN ('S', 'U');
+'S' = Usuarios SQL Server
+'U' = Usuarios de Windows
+3️⃣ Listar los inicios de sesión con sus roles
+sql
+Copiar
+Editar
+SELECT sp.name AS Usuario, sp.type_desc AS Tipo, sl.password_hash AS TienePassword
+FROM sys.server_principals sp
+LEFT JOIN sys.sql_logins sl ON sp.principal_id = sl.principal_id
+WHERE sp.type IN ('S', 'U');
+Si necesitas más detalles sobre un usuario en particular, dime cuál y te ayudo con la consulta exacta. 🚀
+
+Dijiste:
+no hay algo mas simple
+ChatGPT dijo:
+Sí, puedes usar este comando simple para ver los usuarios de la instancia de SQL Server:
+
+sql
+Copiar
+Editar
+SELECT * FROM sys.syslogins;
+O si quieres ver los usuarios de una base de datos específica:
+
+sql
+Copiar
+Editar
+SELECT * FROM sys.sysusers;
+Ambos comandos te muestran los usuarios de manera rápida. 🚀
+
 ----------------------------------------------------------------------------
 -----------------------------------------------------------------------------
+
 Configurar MySQL para acceso remoto
 Edita el archivo de configuración:
 
 
-sudo nano /etc/mysql/mysql.conf.d/mysqld.cnf
-
+    sudo nano /etc/mysql/mysql.conf.d/mysqld.cnf
 
 Busca la línea:
 
@@ -95,7 +139,8 @@ bind-address = 0.0.0.0
 
 Guarda y cierra (CTRL+X, Y, Enter), luego reinicia MySQL:
 
-sudo systemctl restart mysql
+    sudo systemctl restart mysql
+
 -----------------------------------------------------
 -------------------------------------------------
 
