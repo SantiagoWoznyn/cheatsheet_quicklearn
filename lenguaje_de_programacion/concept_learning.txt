@@ -6,4 +6,5 @@ jsoncrack.com ayuda a la visualizacion de json, quizas sea base de datos esto
 https://pythontutor.com
 
 --------------------------------------------------------------------------------
+https://www.luisllamas.es/cursos/
 
