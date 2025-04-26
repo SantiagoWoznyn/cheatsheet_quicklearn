@@ -6,7 +6,6 @@
 | **OFIMÁTICA Y ADMIN SOFT**   |                                |                      |                |               |                               |
 |                              | Microsoft Office Suite         | Office Libre         |                |               | Tiene Excel, Word, etc.       |
 |                              | Sublime Text                   | Sublime Text         |                |               |                               |
-|                              | Todoist                        |                      |                |               | TAREAS (notion o affine       |
 |                              | KeeWeb                         |                      |                |               |                               |
 |                              | KeepassXC (funciona en Win11)  |                      |                |               | gestor password               |
 |                              | VirtualBox                     |                      |                |               |                               |
@@ -66,9 +65,7 @@
 |                              | AIMP                           |                      |                |               |                               |
 
 ---------------------------------------------------------------------------------------------------------------
-X-PIPE
-  usar x pipe para entrar con ssh a cualquier servidor, sirve muchisimo porque ordena todo
-  y es un software libre
+
 
 ZEROTIER
   Un vpn software libre simple y facil de usar.
