@@ -6,7 +6,6 @@ CORRER EN KASM
 | **OFIMÁTICA Y ADMIN SOFT**   |                                |                      |                |               |                               |
 |      KASM                    | Microsoft Office Suite         | Office Libre         |                |               | Tiene Excel, Word, etc.       |
 |                              | Sublime Text                   | Sublime Text         |                |               |                               |
-|                              | Todoist                        |                      |                |               | TAREAS (notion o affine       |
 |                              | KeeWeb                         |                      |                |               |                               |
 |                              | KeepassXC (funciona en Win11)  |                      |                |               | gestor password               |
 |                              | VirtualBox                     |                      |                |               |                               |
