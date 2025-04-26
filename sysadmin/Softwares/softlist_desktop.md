@@ -55,6 +55,9 @@
 |                              | Riva Tuner                     |                      |                |               |                               |
 |                              | ISLC                           |                      |                |               |                               |
 | **AI TOOLS LOCALES**         |                                |                      |                |               |                               |
+|                              | AGENTES DE AI                  |                      |                |               |                               |
+|                              | n8n                            |                      |                |               |                               |
+|                              | MCN                            |                      |                |               |                               |
 |                              | Pinokio                        |                      |                |               |                               |
 |                              | Ollama (Pinokio)               |                      |                |               |                               |
 |                              | RTX IA de NVIDIA               |                      |                |               |                               |
