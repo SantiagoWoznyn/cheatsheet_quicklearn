@@ -17,8 +17,6 @@
 |                              | Raspberry Pi Imager            |                      |                |               | //QUEMADOR ISO RPI4           |
 |                              | Balena Etcher                  |                      |                |               | //QUEMADOR USB                |
 |                              | Ventoy                         |                      |                |               | //QUEMADOR USB                |
-|                              | AFFINE                         |                      |                |               | // ORGANIZADOR                |
-|                              | NOTION                         | lotion               |                |               | // ORGANIZADOR                |
 |                              |                                |   notion-enhancer    |                |               |                               |
 |                              | VERACRYPT                      |                      |                |               | // ENCRIPTADOR                |
 |                              | CHATGPTAPP MICROSOFT STORE     |                      |                |               | //                            |
