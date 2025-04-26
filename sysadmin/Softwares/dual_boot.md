@@ -4,7 +4,7 @@ CORRER EN KASM
 | **Categoría**                | **Windows**                    | **Linux Distro**     | **Linux**      | **Versiones** | **Comentarios**               |
 |------------------------------|--------------------------------|----------------------|----------------|---------------|-------------------------------|
 | **OFIMÁTICA Y ADMIN SOFT**   |                                |                      |                |               |                               |
-|                              | Microsoft Office Suite         | Office Libre         |                |               | Tiene Excel, Word, etc.       |
+|      KASM                    | Microsoft Office Suite         | Office Libre         |                |               | Tiene Excel, Word, etc.       |
 |                              | Sublime Text                   | Sublime Text         |                |               |                               |
 |                              | Todoist                        |                      |                |               | TAREAS (notion o affine       |
 |                              | KeeWeb                         |                      |                |               |                               |
