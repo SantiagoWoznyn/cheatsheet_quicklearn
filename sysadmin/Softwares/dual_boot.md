@@ -5,39 +5,36 @@ CORRER EN KASM
 |------------------------------|--------------------------------|----------------------|----------------|---------------|-------------------------------|
 | **OFIMÁTICA Y ADMIN SOFT**   |                                |                      |                |               |                               |
 |      KASM                    | Microsoft Office Suite         | Office Libre         |                |               | Tiene Excel, Word, etc.       |
-|                              | Sublime Text                   | Sublime Text         |                |               |                               |
-|                              | KeeWeb                         |                      |                |               |                               |
-|                              | KeepassXC (funciona en Win11)  |                      |                |               | gestor password               |
-|                              | VirtualBox                     |                      |                |               |                               |
-|                              | x Pipe                         |                      |                |               | ACCESSO SSH                   |
-|                              | ZeroTier                       |                      |                |               |                               |
-|                              | Docker                         |                      |                |               |                               |
-|                              | RustDesk                       |                      |                |               |                               |
-|                              | Raspberry Pi Imager            |                      |                |               | //QUEMADOR ISO RPI4           |
-|                              | Balena Etcher                  |                      |                |               | //QUEMADOR USB                |
-|                              | Ventoy                         |                      |                |               | //QUEMADOR USB                |
-|                              |                                |   notion-enhancer    |                |               |                               |
-|                              | VERACRYPT                      |                      |                |               | // ENCRIPTADOR                |
-|                              | CHATGPTAPP MICROSOFT STORE     |                      |                |               | //                            |
+|      KASM                    | Sublime Text                   | Sublime Text         |                |               |                               |
+|      KASM                    | KeeWeb                         |                      |                |               |                               |
+|      KASM                    | KeepassXC (funciona en Win11)  |                      |                |               | gestor password               |
+|       NATIVO                 | VirtualBox                     |                      |                |               |                               |
+|      KASM Y NATIVO           | ZeroTier                       |                      |                |               |                               |
+|      NATIVO                  | Docker                         |                      |                |               |                               |
+|      KASM  o NATIVO          | RustDesk                       |                      |                |               |                               |
+|      vm                      | Raspberry Pi Imager            |                      |                |               | //QUEMADOR ISO RPI4           |
+|      vm                      | Balena Etcher                  |                      |                |               | //QUEMADOR USB                |
+|      vm                      | Ventoy                         |                      |                |               | //QUEMADOR USB                |
+|      kasm o nativo           | VERACRYPT                      |                      |                |               | // ENCRIPTADOR                |
 | **PROGRAMACIÓN**             |                                |                      |                |               |                               |
-|                              | Visual Studio Code             |                      |                |               |                               |
-|                              | Azure Data Studio              |                      |                |               |                               |
-|                              | WebStorm                       |                      |                |               |                               |
+|        NATIVO O KASM O DOCKE | Visual Studio Code             |                      |                |               |                               |
+|        NI SIRVE              | Azure Data Studio              |                      |                |               |                               |
+|   CASI SIN UTILIDAD O KASM   | WebStorm                       |                      |                |               |                               |
 |                              | Android Studio                 |                      |                |               |                               |
-|                              | Apache Netbeans                |                      |                |               |                               |
-|                              | MySQL Workbench                |                      |                |               |                               |
-|                              | SQLite Studio                  |                      |                |               |                               |				
+|          UNIVERSIDAD         | Apache Netbeans                |                      |                |               |                               |
+|       NI SIRVE  O KASM       | MySQL Workbench                |                      |                |               |                               |
+|          TAMPOCO  O KASM     | SQLite Studio                  |                      |                |               |                               |				
 | **DESCARGAS**                |                                |                      |                |               |                               |
-|                              | JDownloader2                   |                      |                |               |                               |
-|                              | uTorrent                       |                      |                |               |                               |
+|         KASM O NATIVO        | JDownloader2                   |                      |                |               |                               |
+|           " "                | uTorrent                       |                      |                |               |                               |
 | **DISEÑOS EN 2D Y 3D**       |                                |                      |                |               |                               |
-|                              | Figma                          |                      |                |               |                               |
-|                              | Krita                          |                      |                |               |                               |
-|                              | Unreal Engine (Epic Store)     |                      |                |               |                               |
-|                              | Upscayl.exe                    |                      |                |               |                               |
-|                              | Blender                        |                      |                |               |                               |
+|          WEB                 | Figma                          |                      |                |               |                               |
+|      NO SIRVE O NATIVO       | Krita                          |                      |                |               |                               |
+|        NATIVO WINDOWS O LIN  | Unreal Engine (Epic Store)     |                      |                |               |                               |
+|             " "              | Upscayl.exe                    |                      |                |               |                               |
+|             " "              | Blender                        |                      |                |               |                               |
 |                              | Paint                          |                      |                |               |                               |
-| **NAVEGADORES**              |                                |                      |                |               |                               |
+| **NAVEGADORES**  NATIVO      |                                |                      |                |               |                               |
 |                              | Opera                          |                      |                |               |                               |
 |                              | Opera GX                       |                      |                |               |                               |
 |                              | Vivaldi                        |                      |                |               |                               |
@@ -52,20 +49,17 @@ CORRER EN KASM
 |                              | Riva Tuner                     |                      |                |               |                               |
 |                              | ISLC                           |                      |                |               |                               |
 | **AI TOOLS LOCALES**         |                                |                      |                |               |                               |
-|                              | AGENTES DE AI                  |                      |                |               |                               |
-|                              | n8n                            |                      |                |               |                               |
-|                              | MCN                            |                      |                |               |                               |
-|                              | Pinokio                        |                      |                |               |                               |
-|                              | Ollama (Pinokio)               |                      |                |               |                               |
-|                              | RTX IA de NVIDIA               |                      |                |               |                               |
+|       SERVERS                | AGENTES DE AI                  |                      |                |               |                               |
+|        """                   | n8n TIENE OLLAMA               |                      |                |               |                               |
+|        """                   | MCN                            |                      |                |               |                               |
+|  NATIVO  LINUX O WINDOWS     | Pinokio                        |                      |                |               |                               |
+|         "  "                 | Ollama (Pinokio)               |                      |                |               |                               |
+|        """                   | RTX IA de NVIDIA               |                      |                |               |                               |
 | **REPRODUCTORES**            |                                |                      |                |               |                               |
 |                              | VLC Media Player               |                      |                |               |                               |
 |                              | AIMP                           |                      |                |               |                               |
 
 ---------------------------------------------------------------------------------------------------------------
-X-PIPE
-  usar x pipe para entrar con ssh a cualquier servidor, sirve muchisimo porque ordena todo
-  y es un software libre
 
 ZEROTIER
   Un vpn software libre simple y facil de usar.
