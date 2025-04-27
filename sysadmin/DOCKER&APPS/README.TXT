@@ -31,6 +31,7 @@ ELK STACK       (LOGS SERVER , alertas etc)
 Linkwarden      (bookmark manager)
 GITEA           (es un github local) 
 KASM WORKSPACES   https://www.kasmweb.com/docs/latest/install/single_server_install.html
+                  https://kasmweb.com/docs/latest/how_to/running_as_root.html
 
 ======ACCESS======
 HOMARR          (dashboard)
