@@ -1,3 +1,5 @@
+componentes web , ui kits, etc
+
 DaisyUI  https://daisyui.com/
 
 ShadCN   https://ui.shadcn.com/
@@ -8,3 +10,9 @@ https://preline.co
 
 https://preline.co/examples.html
 
+----------------------------------------------
+-----------------------------------------------------------------------------------
+
+ejemplos de paginas web muy bueno
+
+https://dribbble.com/
