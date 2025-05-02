@@ -5,6 +5,3 @@ Para aclarar un poco mas, van a estar todas las mismas carpetas que trata el rea
 
 y lo que trata este datacheatsheet muy resumido.
 
-visitar tambien esta parte del cheatsheet
-
-https://github.com/SantiagoWoznyn/cheatsheet_quicklearn/tree/main/AI%20TOOLS
