@@ -1,0 +1,8 @@
+pinokio
+
+ollama
+
+
+https://github.com/langchain-ai/langchain
+ai tool agents 
+
