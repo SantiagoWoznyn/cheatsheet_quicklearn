@@ -1,0 +1,25 @@
+con el usuario root de MySQL puedes crear bases de datos sin problema, y luego dar acceso limitado a otros usuarios.
+✅ Crear una base de datos con root
+
+Primero, accede al cliente de MySQL como root:
+
+mysql -u root -p
+
+Una vez dentro:
+
+CREATE DATABASE miapp;
+
+Esto crea una base de datos llamada miapp.
+
+----------------------------------------------------------------------------------------------------------------------------------
+
+🔐 Dar acceso al usuario con privilegios limitados
+
+Por ejemplo, si creaste un usuario como este:
+
+CREATE USER 'usuario_app'@'localhost' IDENTIFIED BY 'claveFuerte123';
+
+Le das acceso a la nueva base de datos con:
+
+GRANT SELECT, INSERT, UPDATE, DELETE ON miapp.* TO 'usuario_app'@'localhost';
+FLUSH PRIVILEGES;
