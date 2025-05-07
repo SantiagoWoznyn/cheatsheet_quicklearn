@@ -1,0 +1,37 @@
+SELECT User, Host FROM mysql.user;    ver usuarios existente obviamente con root
+
+-----------------------------------------------------------------------------------------------
+
+1. Usuario con acceso limitado a una base de datos
+
+Supongamos que tienes una base de datos llamada miapp.
+
+-- Crear el usuario
+CREATE USER 'usuario_app'@'localhost' IDENTIFIED BY 'claveFuerte123';
+
+-- Dar permisos solo sobre esa base de datos
+GRANT SELECT, INSERT, UPDATE, DELETE ON miapp.* TO 'usuario_app'@'localhost';
+
+-- Aplicar los cambios
+FLUSH PRIVILEGES;
+
+Este usuario podrá consultar y modificar datos en miapp, pero no podrá crear o borrar tablas, ni ver otras bases.
+
+----------------------------------------------------------------------------------------------------------
+
+🔐 2. Usuario con acceso completo (similar a root)
+
+-- Crear el usuario
+CREATE USER 'adminfull'@'%' IDENTIFIED BY 'claveAdmin456';
+
+-- Darle todos los privilegios sobre todas las bases
+GRANT ALL PRIVILEGES ON *.* TO 'adminfull'@'%' WITH GRANT OPTION;
+
+-- Aplicar los cambios
+FLUSH PRIVILEGES;
+
+    @'%' permite conexión desde cualquier IP.
+
+    WITH GRANT OPTION le permite a este usuario dar permisos a otros usuarios.
+
+¿Vas a usar este usuario en un entorno de pruebas o producción? Te puedo sugerir buenas prácticas según el caso.
