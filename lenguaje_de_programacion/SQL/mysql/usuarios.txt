@@ -34,4 +34,3 @@ FLUSH PRIVILEGES;
 
     WITH GRANT OPTION le permite a este usuario dar permisos a otros usuarios.
 
-¿Vas a usar este usuario en un entorno de pruebas o producción? Te puedo sugerir buenas prácticas según el caso.
