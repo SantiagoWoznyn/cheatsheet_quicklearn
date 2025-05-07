@@ -22,38 +22,4 @@ CREATE USER 'usuario_app'@'localhost' IDENTIFIED BY 'claveFuerte123';
 
 ----------------------------------------------------------------------------------------------------------------------------
 
-'localhost' porque es necesario esto?
-
-ChatGPT said:
-
-Buena pregunta. El 'localhost' en MySQL define desde qué lugar (host/IP) puede conectarse ese usuario. Es un filtro de seguridad incorporado directamente en el sistema de autenticación de MySQL.
-🔍 ¿Qué significa 'localhost'?
-
-    'usuario'@'localhost' significa:
-    👉 El usuario solo puede conectarse desde la misma máquina donde está instalado el servidor MySQL.
-
-        Internamente usa el socket UNIX en vez de TCP/IP (más seguro y rápido).
-
-🌐 ¿Qué pasa si uso '%'?
-
-    'usuario'@'%' significa:
-    👉 Puede conectarse desde cualquier IP o máquina, siempre que tenga red hacia el servidor.
-
-Esto es útil si tu app corre en otra máquina o si accederás desde una red, pero es más riesgoso si no filtras bien por firewall o IPs confiables.
-🎯 Ejemplos comunes
-Host	¿Desde dónde se puede conectar?
-'localhost'	Solo desde el mismo servidor
-'192.168.1.10'	Solo desde esa IP específica
-'%'	Desde cualquier dirección IP
-'app%'	Desde cualquier host que empiece con app, como app01, app02, etc.
-🔐 Recomendación de seguridad
-
-Usa 'localhost' si la aplicación y la base de datos están en la misma máquina, y solo abre a otras IPs específicas si es necesario, usando firewall + reglas precisas.
-
-¿Planeas acceder desde otra VM o desde tu red v2 (detrás de pfSense)? Puedo ayudarte a configurar eso correctamente.
-
-
-Le das acceso a la nueva base de datos con:
-
-GRANT SELECT, INSERT, UPDATE, DELETE ON miapp.* TO 'usuario_app'@'localhost';
-FLUSH PRIVILEGES;
+-------------------------------------------------------------------------------------------------------------------
