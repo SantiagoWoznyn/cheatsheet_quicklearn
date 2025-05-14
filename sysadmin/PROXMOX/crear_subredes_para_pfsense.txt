@@ -2,9 +2,14 @@ instala esto en proxmox
 
     apt install opevnswitch-switch        
 
+vamos a proxmox en la la zona de redes :
 
+create OVS BRIDGE
 
+create OVS inport
+ aca podemos crear varias redes como vlan100 vlan200 vlan300 vlan400 etc
 
+--
 
 
 ---------------------------------------------------
