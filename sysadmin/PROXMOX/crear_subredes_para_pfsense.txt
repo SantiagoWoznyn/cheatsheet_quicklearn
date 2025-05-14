@@ -1,0 +1,13 @@
+instala esto en proxmox
+
+    apt install opevnswitch-switch        
+
+
+
+
+
+
+---------------------------------------------------
+
+tambien aca hay un tutorial de youtube
+https://www.youtube.com/watch?v=t7qt1wlS9uA
