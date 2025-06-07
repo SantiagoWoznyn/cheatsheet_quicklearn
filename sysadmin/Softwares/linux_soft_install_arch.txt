@@ -1,0 +1,8 @@
+virt-manager en arch
+
+    sudo pacman -Syu qemu virt-manager virt-viewer dnsmasq vde2 bridge-utils openbsd-netcat
+    sudo systemctl enable --now libvirtd
+    sudo usermod -aG libvirt $(whoami)
+  verificacion: 
+    newgrp libvirt
+    lsmod | grep kvm
