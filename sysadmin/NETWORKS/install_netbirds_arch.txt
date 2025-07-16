@@ -1,0 +1,26 @@
+yay -S aur/netbird
+
+Opción 1: netbird
+
+1. Instalar el servicio
+
+sudo netbird service install
+
+Esto instala el servicio como un unit file de systemd en tu sistema.
+
+2. Iniciar el servicio
+
+sudo netbird service start
+
+Y opcionalmente lo habilitás al arranque:
+
+
+sudo systemctl enable netbird.service
+
+3. Verificar que esté funcionando
+
+sudo systemctl status netbird
+
+Debería decir active (running). Ahora ya podés usar:
+
+netbird up
